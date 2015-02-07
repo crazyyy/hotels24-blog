@@ -1,12 +1,15 @@
 @import '_reset.scss';
 @import '_wordpress.scss';
 @import '_fonts.scss';
+@import '_sprite.scss';
+@import '_font-awesome.scss';
 
 $width: 980px;
 $footer: 76px;
 $footer_margin: $footer - 2 * $footer;
 $bordercolor: #b2b9b9;
 $trans: all .5s;
+$bdrs: 5px;
 
 
 .top-bottom-bg {
@@ -31,15 +34,64 @@ body {
   min-height: 100%;
   margin: 0 auto;
 }
-
 a,
 input,
 button {
   transition: $trans;
 }
+button {
+  outline: none;
+}
+input {
+  border-radius: $bdrs;
+  border: 1px solid $bordercolor;
+  outline: none;
+  cursor: pointer;
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: darken($bordercolor, 25%);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
+  }
+}
 
 header {
-
+  .top-header {
+    height: 41px;
+    width: 100%;
+    form {
+      width: 220px;
+      display: inline-block;
+      height: 41px;
+      padding: 5px 0;
+      margin: 0 15px 0 0;
+      position: relative;
+      input {
+        width: 220px;
+        height: 31px;
+        font-size: 14px;
+        padding: 9px;
+      }
+      button {
+        display: block;
+        width: 42px;
+        height: 29px;
+        position: absolute;
+        top: 6px;
+        right: 1px;
+        border-radius: 0 5px 5px 0;
+        border: 0;
+        background-color: #ececec;
+        font-family: 'Font Awesome';
+        &:hover {
+          background-color: darken(#ececec, 25%);
+        }
+        &:active {
+          background-color: darken(#ececec, 50%);
+        }
+      }
+    }
+  }
 }
 .headnav {
   display: inline-block;
@@ -52,13 +104,15 @@ header {
     display: inline-block;
     float: left;
     font-size: 13px;
-    height: 38px;
+    height: 39px;
     border-left: 1px solid $bordercolor;
+    position: relative;
+
     &:last-child {
       border-right: 1px solid $bordercolor;
     }
     a {
-      height: 37px;
+      height: 39px;
       border-bottom: 3px solid transparent;
       text-decoration: none;
       font-weight: 600;
@@ -71,8 +125,18 @@ header {
         border-color: #454545;
       }
     }
-    ul {
-      display: none;
+    .sub-menu {
+      position: absolute;
+      left: 0;
+      top: 41px;
+      z-index: 5;
+      padding: 0 !important;
+      background-color: blue;
+      li {
+        ul {
+          display: none;
+        }
+      }
     }
   }
 
@@ -86,7 +150,7 @@ header {
 .bkblock0n {
    position: absolute;
    top: 0;
-   height: 39px;
+   height: 41px;
    @extend .top-bottom-bg;
 }
 .bkblock01 {

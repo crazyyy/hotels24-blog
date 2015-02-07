@@ -36,7 +36,7 @@
 				</nav>
 				<!-- /nav -->
 				<form action="">
-					<input type="text"><button></button>
+					<input type="text" placeholder="Поиск по новостям"><button><i class="fa fa-search"></i></button>
 				</form>
 				<ul class="lang-selector">
 					<li>Ukr</li>
