@@ -25,13 +25,30 @@
 	</script>
 </head>
 <body <?php body_class(); ?>>
-
 	<!-- wrapper -->
-	<div class="wrapper">
-
+	<div class="wrapper clearfix">
 		<!-- header -->
-		<header class="header clearfix" role="banner">
-
+		<header class="header clearfix">
+			<div class="top-header">
+				<!-- nav -->
+				<nav class="nav" role="navigation">
+					<?php wpeHeadNav(); ?>
+				</nav>
+				<!-- /nav -->
+				<form action="">
+					<input type="text"><button></button>
+				</form>
+				<ul class="lang-selector">
+					<li>Ukr</li>
+					<li>Rus</li>
+				</ul>
+			</div>
+			<!-- /.top-header -->
+			<div class="nav-more-block">
+				<span>Еще...</span>
+				<?php wpeHeaderSubNav(); ?>
+			</div>
+			<!-- /.nav-more-block -->
 			<!-- logo -->
 			<div class="logo">
 				<?php if ( is_front_page() && is_home() ){ } else { ?>
@@ -45,12 +62,11 @@
 				<?php } ?>
 			</div>
 			<!-- /logo -->
-
-			<!-- nav -->
-			<nav class="nav" role="navigation">
-				<?php wpeHeadNav(); ?>
-			</nav>
-			<!-- /nav -->
-
+			<div class="advanced">
+				
+			</div>
+			<!-- /.advanced -->
 		</header>
 		<!-- /header -->
+
+		<div class="container clearfix">

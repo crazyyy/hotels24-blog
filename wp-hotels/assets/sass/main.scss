@@ -5,10 +5,13 @@
 $width: 980px;
 $footer: 76px;
 $footer_margin: $footer - 2 * $footer;
+$bordercolor: #b2b9b9;
+$trans: all .5s;
+
 
 .top-bottom-bg {
-   border-top: 1px solid #b2b9b9;
-   border-bottom: 1px solid #b2b9b9;
+   border-top: 1px solid $bordercolor;
+   border-bottom: 1px solid $bordercolor;
    background-color: #f8f8f8;
 }
 
@@ -29,10 +32,51 @@ body {
   margin: 0 auto;
 }
 
+a,
+input,
+button {
+  transition: $trans;
+}
+
 header {
 
 }
+.headnav {
+  display: inline-block;
+  width: 640px;
+  height: 41px;
+  float: left;
+  margin: 0;
+  padding: 1px 0;
+  li {
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    height: 38px;
+    border-left: 1px solid $bordercolor;
+    &:last-child {
+      border-right: 1px solid $bordercolor;
+    }
+    a {
+      height: 37px;
+      border-bottom: 3px solid transparent;
+      text-decoration: none;
+      font-weight: 600;
+      color: #444444;
+      display: block;
+      padding: 12px 12px 10px;
+    }
+    &:hover {
+      a{
+        border-color: #454545;
+      }
+    }
+    ul {
+      display: none;
+    }
+  }
 
+}
 .backhead {
    z-index: -50;
    width: 100%;

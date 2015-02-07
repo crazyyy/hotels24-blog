@@ -1,5 +1,0 @@
-*.sublime-project
-*.sublime-workspace
-.sass-cache
-node_modules
-.sublime-gulp.cache
