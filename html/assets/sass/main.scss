@@ -1,5 +1,6 @@
 @import '_reset.scss';
 @import '_wordpress.scss';
+@import '_fonts.scss';
 
 $width: 980px;
 $footer: 76px;
@@ -13,10 +14,12 @@ $footer_margin: $footer - 2 * $footer;
 
 
 body {
-   font-family: Arial, 'Helvetica Neue', Helvetica,sans-serif;
+   font-family: 'Open Sans';
+   font-weight: lighter;
    font-size: 14px;
    color: #444;
-   font-weight: 300;
+   background-image: url(../img/bg/body.jpg);
+   background-repeat: repeat;
 }
 .wrapper {
   width: $width;
@@ -41,6 +44,18 @@ header {
    top: 0;
    height: 39px;
    @extend .top-bottom-bg;
+}
+.bkblock01 {
+   position: absolute;
+   top: 41px;
+   height: 96px;
+   background-color: #fff;
+   border-bottom: 1px solid #c2c7c7;
+   .shadow {
+      width: 100%;
+      height: 95px;
+      border-bottom: 1px solid #b3baba;
+   }
 }
 
 .container {
