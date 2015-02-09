@@ -31,11 +31,12 @@ var appFiles = {
 var spriteConfig = {
     imgName: 'sprite.png',
     cssName: '_sprite.scss',
-    imgPath: paths.images.dest + 'sprite.png' // Gets put in the css
+    imgPath: '../' + paths.images.dest + 'sprite.png' // Gets put in the css
 };
 var     gulp        =       require('gulp'),
         gutil       =       require('gulp-util'),
         es          =       require('event-stream'), /* ALARM */
+        livereload  =       require('gulp-livereload'),
         
 //         /* ALARM */
 //        wait        =       require('gulp-wait'), /* ALARM */ 
@@ -69,7 +70,8 @@ gulp.task('css', function () {
         })
         .pipe(plugins.size({showFiles:true}))
         .pipe(plugins.sourcemaps.write('/maps/'))
-        .pipe(gulp.dest(paths.styles.dest));
+        .pipe(gulp.dest(paths.styles.dest))
+        .pipe(livereload());
 });
 
 gulp.task('style', function () {
@@ -87,7 +89,8 @@ gulp.task('style', function () {
         outputStyle:        sassStyle
     }))
     .pipe(plugins.size({showFiles:true}))
-    .pipe(gulp.dest(paths.styles.dest));
+    .pipe(gulp.dest(paths.styles.dest))
+    .pipe(livereload());
 });
 
 
@@ -97,7 +100,8 @@ gulp.task('scripts', function(){
         .pipe(gulp.dest(paths.scripts.dest))
         .pipe(isProduction ? plugins.uglify() : gutil.noop())
         .pipe(plugins.size({showFiles:true}))
-        .pipe(gulp.dest(paths.scripts.dest));
+        .pipe(gulp.dest(paths.scripts.dest))
+        .pipe(livereload());
 });
 
 gulp.task('image', function() {
@@ -149,10 +153,12 @@ gulp.task('sprite', function () {
 gulp.task('clearcache', function () {
     return gulp.src(basePaths.cache, {read: false})
         .pipe(plugins.wait(500))
-        .pipe(plugins.rimraf());
+        .pipe(plugins.rimraf())
+        .pipe(livereload());;
 });
 
 gulp.task('watch', ['sprite', 'clearcache', 'css', 'style', 'scripts', 'image', 'webp'], function(){
+    livereload.listen();
     gulp.watch(appFiles.styles, ['css', 'style', 'clearcache']).on('change', function(evt) {
         changeEvent(evt);
     });

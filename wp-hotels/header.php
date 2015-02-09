@@ -39,12 +39,12 @@
 					<input type="text" placeholder="Поиск по новостям"><button><i class="fa fa-search"></i></button>
 				</form>
 				<ul class="lang-selector">
-					<li>Ukr</li>
-					<li>Rus</li>
+					<li class="ua"><span>Ukr</span></li>
+					<li class="ru"><span>Rus</span></li>
 				</ul>
 			</div>
 			<!-- /.top-header -->
-			<div class="nav-more-block">
+			<div class="nav-more-block clearfix">
 				<span>Еще...</span>
 				<?php wpeHeaderSubNav(); ?>
 			</div>
