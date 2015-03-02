@@ -5,7 +5,7 @@ var basePaths = {
 };
 var paths = {
     images: {
-        src: basePaths.src + 'images/**',
+        src: basePaths.src + 'img/**',
         dest: basePaths.dest + 'img/'
     },
     scripts: {
@@ -31,16 +31,19 @@ var appFiles = {
 var spriteConfig = {
     imgName: 'sprite.png',
     cssName: '_sprite.scss',
-    imgPath: '../' + paths.images.dest + 'sprite.png' // Gets put in the css
+    imgPath: '../img/sprite.png' // Gets put in the css
 };
 var     gulp        =       require('gulp'),
         gutil       =       require('gulp-util'),
         es          =       require('event-stream'), /* ALARM */
-        livereload  =       require('gulp-livereload'),
+        
+//         /* ALARM */
+//        wait        =       require('gulp-wait'), /* ALARM */ 
         plugins     =       require("gulp-load-plugins")({
                                 pattern: ['gulp-*', 'gulp.*'],
                                 replaceString: /\bgulp[\-.]/
-                            });
+                            })
+        livereload = require('gulp-livereload');
 
 var isProduction    = true,
     sassStyle       = 'compressed';
@@ -56,6 +59,7 @@ var changeEvent = function(evt) {
 
 gulp.task('css', function () {
     var sassFiles = gulp.src(appFiles.styles)
+        .pipe(plugins.sourcemaps.init())
         .pipe(plugins.sass({
             errLogToConsole:    true,
             outputStyle:        sassStyle
@@ -65,8 +69,9 @@ gulp.task('css', function () {
             gutil.beep();
         })
         .pipe(plugins.size({showFiles:true}))
-        .pipe(gulp.dest(paths.styles.dest))
-        .pipe(livereload());
+        .pipe(plugins.sourcemaps.write('/maps/'))
+        .pipe(livereload())
+        .pipe(gulp.dest(paths.styles.dest));
 });
 
 gulp.task('style', function () {
@@ -146,21 +151,26 @@ gulp.task('sprite', function () {
     spriteData.css.pipe(gulp.dest(paths.styles.src));
 });
 
+gulp.task('clearcache', function () {
+    return gulp.src(basePaths.cache, {read: false})
+        .pipe(plugins.wait(500))
+        .pipe(plugins.rimraf());
+});
 
-gulp.task('watch', ['sprite', 'css', 'style', 'scripts', 'image'], function(){
+gulp.task('watch', ['sprite', 'clearcache', 'css', 'style', 'scripts', 'image', 'webp'], function(){
     livereload.listen();
-    gulp.watch(appFiles.styles, ['css', 'style']).on('change', function(evt) {
+    gulp.watch(appFiles.styles, ['css', 'style', 'clearcache']).on('change', function(evt) {
         changeEvent(evt);
     });
-    gulp.watch(paths.scripts.src + '*.js', ['scripts']).on('change', function(evt) {
+    gulp.watch(paths.scripts.src + '*.js', ['scripts', 'clearcache']).on('change', function(evt) {
         changeEvent(evt);
     });
-    gulp.watch(paths.sprite.src, ['sprite', 'css', 'style']).on('change', function(evt) {
+    gulp.watch(paths.sprite.src, ['sprite', 'css', 'style', 'clearcache']).on('change', function(evt) {
         changeEvent(evt);
     });
-    gulp.watch(paths.images.src, ['image']).on('change', function(evt) {
+    gulp.watch(paths.images.src, ['image', 'webp', 'clearcache']).on('change', function(evt) {
         changeEvent(evt);
     });
 });
 
-gulp.task('default', ['css', 'prefixr', 'scripts', 'image']);
+gulp.task('default', ['css', 'prefixr', 'scripts', 'image', 'clearcache']);
