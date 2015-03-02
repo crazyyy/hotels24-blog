@@ -37,9 +37,6 @@ var     gulp        =       require('gulp'),
         gutil       =       require('gulp-util'),
         es          =       require('event-stream'), /* ALARM */
         livereload  =       require('gulp-livereload'),
-        
-//         /* ALARM */
-//        wait        =       require('gulp-wait'), /* ALARM */ 
         plugins     =       require("gulp-load-plugins")({
                                 pattern: ['gulp-*', 'gulp.*'],
                                 replaceString: /\bgulp[\-.]/
@@ -59,7 +56,6 @@ var changeEvent = function(evt) {
 
 gulp.task('css', function () {
     var sassFiles = gulp.src(appFiles.styles)
-        .pipe(plugins.sourcemaps.init())
         .pipe(plugins.sass({
             errLogToConsole:    true,
             outputStyle:        sassStyle
@@ -69,7 +65,6 @@ gulp.task('css', function () {
             gutil.beep();
         })
         .pipe(plugins.size({showFiles:true}))
-        .pipe(plugins.sourcemaps.write('/maps/'))
         .pipe(gulp.dest(paths.styles.dest))
         .pipe(livereload());
 });
@@ -89,8 +84,8 @@ gulp.task('style', function () {
         outputStyle:        sassStyle
     }))
     .pipe(plugins.size({showFiles:true}))
-    .pipe(gulp.dest(paths.styles.dest))
-    .pipe(livereload());
+    .pipe(livereload())
+    .pipe(gulp.dest(paths.styles.dest));
 });
 
 
@@ -100,8 +95,8 @@ gulp.task('scripts', function(){
         .pipe(gulp.dest(paths.scripts.dest))
         .pipe(isProduction ? plugins.uglify() : gutil.noop())
         .pipe(plugins.size({showFiles:true}))
-        .pipe(gulp.dest(paths.scripts.dest))
-        .pipe(livereload());
+        .pipe(livereload())
+        .pipe(gulp.dest(paths.scripts.dest));
 });
 
 gulp.task('image', function() {
@@ -114,6 +109,7 @@ gulp.task('image', function() {
             })
         ))
         .pipe(gulp.dest(paths.images.dest))
+        .pipe(livereload())
         .pipe(plugins.size({showFiles:true}));
 });
 
@@ -150,38 +146,21 @@ gulp.task('sprite', function () {
     spriteData.css.pipe(gulp.dest(paths.styles.src));
 });
 
-gulp.task('clearcache', function () {
-    return gulp.src(basePaths.cache, {read: false})
-        .pipe(plugins.wait(500))
-        .pipe(plugins.rimraf())
-        .pipe(livereload());;
-});
 
-gulp.task('watch', ['sprite', 'clearcache', 'css', 'style', 'scripts', 'image', 'webp'], function(){
+gulp.task('watch', ['sprite', 'css', 'style', 'scripts', 'image'], function(){
     livereload.listen();
-    gulp.watch(appFiles.styles, ['css', 'style', 'clearcache']).on('change', function(evt) {
+    gulp.watch(appFiles.styles, ['css', 'style']).on('change', function(evt) {
         changeEvent(evt);
     });
-    gulp.watch(paths.scripts.src + '*.js', ['scripts', 'clearcache']).on('change', function(evt) {
+    gulp.watch(paths.scripts.src + '*.js', ['scripts']).on('change', function(evt) {
         changeEvent(evt);
     });
-    gulp.watch(paths.sprite.src, ['sprite', 'css', 'style', 'clearcache']).on('change', function(evt) {
+    gulp.watch(paths.sprite.src, ['sprite', 'css', 'style']).on('change', function(evt) {
         changeEvent(evt);
     });
-    gulp.watch(paths.images.src, ['image', 'webp', 'clearcache']).on('change', function(evt) {
+    gulp.watch(paths.images.src, ['image']).on('change', function(evt) {
         changeEvent(evt);
     });
 });
 
-gulp.task('default', ['css', 'prefixr', 'scripts', 'image', 'clearcache']);
-
-
-
-
-
-
-
-/*
- .pipe(plugins.browsersync.reload({stream:true, once:true})) 
- 
-*/
+gulp.task('default', ['css', 'prefixr', 'scripts', 'image']);

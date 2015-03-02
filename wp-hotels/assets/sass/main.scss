@@ -61,8 +61,9 @@ input {
     box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
   }
 }
-
 header {
+  background-color: red;
+  display: none;
   .top-header {
     height: 41px;
     width: 100%;
@@ -306,6 +307,12 @@ header {
     float: right;
    }
 }
+article {
+  .view-article {
+    display: block;
+    text-decoration: none;
+  }
+}
 .loop-with-first {
   article {
     background-color: #fff;
@@ -365,6 +372,79 @@ header {
         -webkit-filter: grayscale(0%);
       }
     }
+
+  }
+  article {
+    &:first-child{
+      height: 225px;
+      background-color: transparent;
+      .date {
+        display: none;
+      }
+      .feature-img {
+        width: 355px;
+        height: 225px;
+        img {
+        }
+        .category-hl {
+          a {
+          }
+        }
+      }      
+    }
+    p{
+      line-height: 1.2;
+    }
+    &:first-child {
+      .category-hl {
+        background-color: #30c0c8;
+      }
+    }
+    &:nth-child(2) {
+      .category-hl {
+        background-color: #d04f31;
+      }
+    } 
+    &:nth-child(3) {
+      .category-hl {
+        background-color: #e8b400;
+      }
+    } 
+    &:nth-child(4) {
+      .category-hl {
+        background-color: #fd8403;
+      }
+    } 
+    &:nth-child(5) {
+      .category-hl {
+        background-color: #e8b400;
+      }
+    } 
+    &:nth-child(6) {
+      .category-hl {
+        background-color: #a8d031;
+      }
+    }  
+    &:nth-child(7) {
+      .category-hl {
+        background-color: #e8b400;
+      }
+    }   
+    &:nth-child(8) {
+      .category-hl {
+        background-color: #30c0c8;
+      }
+    }    
+    &:nth-child(9) {
+      .category-hl {
+        background-color: #d04f31;
+      }
+    }    
+    &:nth-child(10) {
+      .category-hl {
+        background-color: #6a8a0c;
+      }
+    }    
   }
 }
 
@@ -374,12 +454,12 @@ footer {
    width: 100%;
    height: $footer;
    margin: $footer_margin auto 0;
+   background-color: #fff;
    @extend .top-bottom-bg;
    .mainfooter {
       width: $width;
       height: 100%;
       margin: 0 auto;
-      background-color: #b3d4fc;
    }
 }
 
