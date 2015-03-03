@@ -8,7 +8,7 @@
 			<?php if ( function_exists('yoast_breadcrumb') ) { yoast_breadcrumb('<p id="breadcrumbs">','</p>'); } ?>
 			<h1 class="single-title inner-title"><?php the_title(); ?></h1>
 			<?php if(get_field('anonse'))	{ echo '<p class="article-anonse">' . get_field('anonse') . '</p>';	} ?>
-			<p class="authors-line clearfix"><?php echo get_avatar( get_the_author_meta( 'ID' ), 40 ); ?><span class="author-name"><?php _e( 'This post was written by ', 'wpeasy' ); the_author(); ?></span><span class="date"><?php the_time('d F Y'); ?></span><span class="comments"><i class="fa-comment"></i><?php comments_popup_link( __( '0', 'wpeasy' ), __( '1', 'wpeasy' ), __( '%', 'wpeasy' )); ?></span></p>
+			<p class="authors-line clearfix"><?php echo get_avatar( get_the_author_meta( 'ID' ), 40 ); ?><span class="author-name"><?php _e( 'This post was written by ', 'wpeasy' ); the_author(); ?></span><span class="date"><?php the_time('d F Y'); ?></span><span class="comments"><i class="fa fa-comment"></i><?php comments_popup_link( __( '0', 'wpeasy' ), __( '1', 'wpeasy' ), __( '%', 'wpeasy' )); ?></span></p>
 			<!-- post thumbnail // chek if thumbail exits -->
 			<div class="thubma-with-socail clearfix">
 				<ul class="soc-icons">
@@ -25,8 +25,6 @@
 			<!-- Dispaly dynamic content RU: Вывод контента записей -->
 			<?php the_content(); ?>
 
-			<p><?php _e( 'Categorised in: ', 'wpeasy' ); the_category(', '); // Separated by commas ?></p>
-			
 			<?php comments_template(); ?>
 		
 			<?php endwhile; else: ?>
@@ -34,8 +32,9 @@
 			<?php endif; ?>	
 		</article>
 		<!-- /article -->
+		<?php get_template_part('see-also'); ?>
 	</section>
 	<!-- /section -->
 	
-<?php get_sidebar(); ?>
+<?php get_sidebar('single'); ?>
 <?php get_footer(); ?>
