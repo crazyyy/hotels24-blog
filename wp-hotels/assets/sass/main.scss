@@ -338,6 +338,10 @@ article {
       }
       a {
         text-decoration: none;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
       }
       .hotel-rating {
         position: absolute;
@@ -699,6 +703,214 @@ article {
     border: 0;
     margin: 0 0 40px;
     background-color: #fff;
+  }
+}
+.nearby-hotels {
+  ul {
+    padding: 0;
+    display: block;
+    width: 620px;
+    list-style-type: none;
+    li {
+      position: relative;
+      width: 620px;
+      height: 90px;
+      background-color: #fff;
+      margin: 0 0 20px;
+      img {
+        width: 140px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      a {
+        text-decoration: none;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .hotel-rating {
+        position: absolute;
+        top: 2px;
+        left: 145px;
+        .fa {
+          color: #f5af41;
+          margin: 0 3px;
+          font-size: 10px;
+        }     
+      }
+      h5 {
+        color: #3c89b5;
+        font-size: 14px;
+        position: absolute;
+        top: 20px;
+        left: 145px;
+      }
+      p {
+        margin: 0;
+        right: 200px;
+      }
+      .price {
+        display: block;
+        width: 190px;
+        position: absolute;
+        top: 50px;
+        
+        font-size: 14px;
+        color: #5b5b5b;
+        text-align: right;
+        font-weight: 400;
+        .num {
+          font-size: 18px;
+        }
+        .price-old {
+          font-size: 12px;
+          margin: 0 15px 0 0;
+        }
+        .price-new {
+          color: #b20000;
+        }
+      }
+      .timers {
+        color: #5b5b5b;
+        font-size: 10px;
+        text-align: right;
+        position: absolute;
+        top: 77px;
+      }
+    }
+    .hotel-has-online {
+      &:after {
+        content: 'online';
+        position: absolute;
+        top: 0;
+        right: 195px;
+        font-size: 10px;
+        color: #3795e5;
+        background-color: #d9effa;
+        padding: 3px 6px;
+      }
+    }
+    .hotel-has-halfprice {
+      &:before {
+        display: block;
+        content: '';
+        @include sprite($sprite-ico-halfprice-48);
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        z-index: 5;
+      }
+    }
+    .see-hotel {
+      display: block;
+      font-weight: 600;
+      font-size: 16px;
+      color: #fff;
+      text-decoration: none;
+      width: 160px;
+      height: 38px;
+      background-color: #5299c7;
+      position: absolute;
+      top: 26px;
+      right: 20px;
+      text-align: center;
+      line-height: 2.2;
+      &:hover {
+        background-color: lighten(#5299c7, 10%);
+      }
+      &:active {
+        background-color: darken(#5299c7, 10%);
+      }
+    }
+  }
+}
+.poster-headline {
+  width: 100%;
+  .big-date {
+    background-color: #4a4a4a;
+    width: 86px;
+    height: 86px;
+    text-align: center;
+    padding: 16px 0 0;
+    color: #fff;
+    float: left;
+    margin: 5px 30px 30px 0;
+  }
+  .single-title {
+    width: 500px;
+    float: left;
+  }
+  .support-title {
+    padding: 0 0 0 115px;
+    height: 44px;
+    display: block;
+    float: left;
+    text-align: center;
+    li {
+      display: inline-block;
+      display: table-cell;
+      float: left;
+      height: 44px;
+      padding: 10px 15px 10px 10px;
+      margin: 0 20px 0 0;
+      background-color: #96a6a6;
+      text-align: center;
+      line-height: 1.8;
+      font-size: 12px;
+      a{
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+      }
+      .fa {
+        display: inline-block;
+        color: #fff;
+        width: 20px;
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+      }
+      &:hover {
+        background-color: lighten(#96a6a6, 5%);
+      }
+      &:active {
+        background-color: lighten(#96a6a6, 10%);
+      }
+    }
+    .whereis {
+      width: 160px;
+      .fa {
+        left: -1px;
+        top: 2px;
+      }
+    }
+    .searchnearby {
+      width: 130px;
+      .fa {
+        left: -3px;
+        top: 2px;
+      }
+    }
+    .wherebuy {
+      padding: 5px 15px 5px 30px;
+      width: 150px;
+      line-height: 1.4;
+      span {
+        font-size: 10px;
+      }
+      .fa {
+        
+        top: -5px;
+        left: -10px;
+      }
+
+    }
+
   }
 }
 .see-also-container {
