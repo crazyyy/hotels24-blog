@@ -6,8 +6,13 @@
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 		<div class="poster-headline clearfix">
 			<div class="big-date">
-				<span class="daydate"></span>
-				<span class="mounthdate"></span>
+				<span class="daydate"><?php $dateformatstring = "d";
+					$unixtimestamp = strtotime(get_field('date'));
+					echo date_i18n($dateformatstring, $unixtimestamp); ?>
+				</span>
+				<span class="mounthdate"><?php $dateformatstring = "F";
+					$unixtimestamp = strtotime(get_field('date'));
+					echo date_i18n($dateformatstring, $unixtimestamp); ?></span>
 			</div>
 			<h1 class="single-title inner-title"><?php the_title(); ?></h1>
 			<ul class="support-title">

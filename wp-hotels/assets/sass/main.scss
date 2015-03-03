@@ -834,14 +834,27 @@ article {
     width: 86px;
     height: 86px;
     text-align: center;
-    padding: 16px 0 0;
+    padding: 12px 0 0;
     color: #fff;
     float: left;
     margin: 5px 30px 30px 0;
+    .daydate {
+      display: block;
+      text-align: center;
+      font-size: 43px;
+      font-weight: bold;
+    }
+    .mounthdate {
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      font-weight: normal;
+    }
   }
   .single-title {
     width: 500px;
     float: left;
+    margin: 0 0 18px;
   }
   .support-title {
     padding: 0 0 0 115px;
@@ -849,6 +862,7 @@ article {
     display: block;
     float: left;
     text-align: center;
+    margin: 0 0 30px;
     li {
       display: inline-block;
       display: table-cell;
