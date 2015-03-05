@@ -16,3 +16,7 @@ wp-content/wp-cache-config.php
 .sass-cache
 node_modules
 .sublime-gulp.cache
+/.hg
+/.hgignore
+/wordpress/sxd
+/wordpress/wp-config.php
