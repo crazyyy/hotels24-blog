@@ -132,6 +132,10 @@ function qtranxf_insertDropDownElement($language, $url, $id){
 	return $html;
 }
 
+function qtranxf_isMultilingual($str){
+	return preg_match('/(<!--:[a-z]{2}-->|\[:[a-z]{2}\])/im',$str);
+}
+
 if (!function_exists('qtranxf_getLanguage')){
 function qtranxf_getLanguage() {
 	global $q_config;
@@ -312,4 +316,8 @@ function qtranxf_getSortedLanguages($reverse = false) {
 	}
 	if($reverse) krsort($clean_languages);
 	return $clean_languages;
+}
+
+function qtranxf_can_redirect() {
+	return !defined('WP_ADMIN') && !defined('DOING_AJAX') && !defined('WP_CLI') && !defined('DOING_CRON') && empty($_POST);
 }
