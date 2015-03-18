@@ -294,7 +294,12 @@ header {
       border-bottom: 1px solid #b3baba;
    }
 }
-
+.head-go-botton {
+  height: 229px;
+  .shadow {
+    height: 228px;
+  }
+}
 .container {
    padding: 30px 0 $footer;
    section {

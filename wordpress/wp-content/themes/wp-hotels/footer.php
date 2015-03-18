@@ -33,7 +33,7 @@
 		  $( ".nav-more-block" ).toggle( "fast", function() {
 		    // Animation complete.
 		  });
-		  $('.bkblock01').toggleClass( "highlight" );
+		  $('.bkblock01').toggleClass( "head-go-botton" );
 		  event.preventDefault();
 		});
 	</script>
