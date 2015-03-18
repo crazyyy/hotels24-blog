@@ -4,7 +4,7 @@ Donate link: http://blog.darx.net/projects/vk_api/
 Tags: vkontakte, facebook, crosspost, comments, social, share, vk.com
 Requires at least: 3.5.1
 Tested up to: 4.1
-Stable tag: 3.19
+Stable tag: 3.20
 
 Добавляет функционал API сайта VKontakte.ru(vk.com) на ваш блог. Комментарии, кнопки, виджеты...
 
@@ -52,6 +52,9 @@ Stable tag: 3.19
 4. Остальные настройки.
 
 == Changelog ==
+
+= 3.20 =
+ВК заблочил страрую верисю АПИ :\
 
 = 3.11 - 1.19 =
 Улучшения.
@@ -227,7 +230,10 @@ Better.
 
 == Upgrade Notice ==
 
-= 1.19 =
+= 3.20 =
+ВК заблочил страрую верисю АПИ :\
+
+= 3.19 =
 Улучшения.
 
 = 3.10 =

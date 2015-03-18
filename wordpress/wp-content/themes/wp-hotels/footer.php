@@ -28,6 +28,14 @@
 
 	<?php wp_footer(); ?>
 	<script>
+		var morebutton = $( ".headnav li:last-child" );
+		morebutton.click(function() {
+		  $( ".nav-more-block" ).toggle( "fast", function() {
+		    // Animation complete.
+		  });
+		  $('.bkblock01').toggleClass( "highlight" );
+		  event.preventDefault();
+		});
 	</script>
 </body>
 </html>
