@@ -622,15 +622,6 @@ Author URI: http://fortes.com/
 // 	return preg_replace('|' . $category_base . '|', '', $link, 1);
 // }
 
-
-function scpt_demo() {
-    if ( ! class_exists( 'Super_Custom_Post_Type' ) )
-        return;
-    $demo_posts = new Super_Custom_Post_Type( 'Poster' );
-    $demo_posts->set_icon( 'heart' );
-}
-add_action( 'after_setup_theme', 'scpt_demo' );
-
 add_action( 'init', 'register_cpt_posters' );
 
 function register_cpt_posters() {
