@@ -12,10 +12,10 @@
 			<!-- post thumbnail // chek if thumbail exits -->
 			<div class="thubma-with-socail clearfix">
 				<ul class="soc-icons">
-					<li>sss</li>
-					<li>sss</li>
 					<li></li>
-				</ul><!-- soc-icons -->ssssss
+					<li></li>
+					<li></li>
+				</ul><!-- soc-icons -->
 				<?php if ( has_post_thumbnail()) :?>
 					<a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); // Fullsize image for the single post ?></a>
 				<?php endif; ?>

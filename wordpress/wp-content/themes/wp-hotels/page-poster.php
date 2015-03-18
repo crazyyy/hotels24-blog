@@ -4,11 +4,9 @@
 	<section class="loop-with-first" role="main">
 	
 <?php 
-
 $today = date('Ymd');
-
 $args = array (
-    'post_type' => 'poster',
+    'post_type' => 'posters',
     'meta_query' => array(
 		array(
 	        'key'		=> 'start_date',
@@ -22,25 +20,13 @@ $args = array (
 	    )
     ),
 );
-
 ?>
 
-
-
 	<?php 
-
-
-
-
 	query_posts($args); 
-
-
-
-
-
-
 	?>
-	sdasa
+
+
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
 	<!-- article -->
