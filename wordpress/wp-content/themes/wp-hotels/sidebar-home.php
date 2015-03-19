@@ -10,28 +10,23 @@
 			<ul>
 				<li class="today">
 					<h5>Сегодня</h5>
-					<a href="#">Новый год во Львове: подарите близким средневековую сказку!</a>
-					<span>16<span>октября</span></span>
+					<a href="#">Новый год во Львове: подарите близким средневековую сказку!<span class="cluster">16<span>октября</span></span></a>
 				</li>
 				<li class="month-october">
 					<h5>Октябрь, 2014</h5>
-					<a href="#">Вперед в прошлое: уникальный музей ретро-автомобилей в Запорожье </a>
-					<span>16<span>октября</span></span>
+					<a href="#">Вперед в прошлое: уникальный музей ретро-автомобилей в Запорожье <span class="cluster">16<span>октября</span></span></a>
 				</li>
-				<li class="month-october">
+				<li class="month-october month-hide">
 					<h5>Октябрь, 2014</h5>
-					<a href="#">Навстречу неизведанному: сколько стоит полет в космос</a>
-					<span>18<span>октября</span></span>
+					<a href="#">Навстречу неизведанному: сколько стоит полет в космос<span class="cluster">18<span>октября</span></span></a>
 				</li>
 				<li class="month-november">
 					<h5>Ноябрь, 2014</h5>
-					<a href="#">Навстречу неизведанному: сколько стоит полет в космос</a>
-					<span>01<span>ноября</span></span>
+					<a href="#">Навстречу неизведанному: сколько стоит полет в космос<span class="cluster">>01<span>ноября</span></span></a>
 				</li>
 				<li class="month-november">
 					<h5>Октябрь, 2014</h5>
-					<a href="#">Навстречу неизведанному: сколько стоит полет в космос</a>
-					<span>88<span>ноября</span></span>
+					<a href="#">Навстречу неизведанному: сколько стоит полет в космос<span class="cluster">88<span>ноября</span></span></a>
 				</li>
 			</ul>
 		</div>
