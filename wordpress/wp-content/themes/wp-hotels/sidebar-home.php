@@ -16,7 +16,7 @@
 					<h5>Октябрь, 2014</h5>
 					<a href="#">Вперед в прошлое: уникальный музей ретро-автомобилей в Запорожье <span class="cluster">16<span>октября</span></span></a>
 				</li>
-				<li class="month-october month-hide">
+				<li class="month-october">
 					<h5>Октябрь, 2014</h5>
 					<a href="#">Навстречу неизведанному: сколько стоит полет в космос<span class="cluster">18<span>октября</span></span></a>
 				</li>

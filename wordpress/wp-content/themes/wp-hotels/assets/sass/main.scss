@@ -598,9 +598,9 @@ article {
    }
    ul {
       li {
-         padding: 10px 25px;
-        
+         padding: 0 25px 10px;
          h5 {
+            display: none;
             padding: 0 0 6px;
             margin: 0 0 10px;
             border-bottom: 1px solid #f4b233;
@@ -637,8 +637,10 @@ article {
          }
       }
       .today {
+         padding: 10px 25px;
          background-color: rgba(255, 249, 220, 0.70);
          h5 {
+            display: block;
             padding: 0;
             margin: 0 0 5px;
             border: 0;
@@ -651,10 +653,10 @@ article {
             }
          }
       }
-      .month-hide {
-         padding: 0 25px 10px;
+      .month-visible {
+         padding: 10px 25px;
          h5 {
-            display: none;
+            display: block;
          }
       }
    }

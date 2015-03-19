@@ -28,6 +28,7 @@
 
 	<?php wp_footer(); ?>
 	<script>
+		// open-close .more in nav
 		var morebutton = $( ".headnav li:last-child" );
 		morebutton.click(function() {
 		  $( ".nav-more-block" ).toggle( "fast", function() {
@@ -36,6 +37,16 @@
 		  $('.bkblock01').toggleClass( "head-go-botton" );
 		  event.preventDefault();
 		});
+		// open-close .more in nav
+
+		// in .widget-posters-grey display only first mounth
+		var monthOctober = document.querySelector(".month-october");
+		var monthNovember = document.querySelector(".month-november");
+
+		monthOctober.classList.add("month-visible");
+		monthNovember.classList.add("month-visible");
+		// in .widget-posters-grey display only first mounth
+
 	</script>
 </body>
 </html>
