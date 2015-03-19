@@ -3,7 +3,19 @@
 	<!-- section -->
 	<section class="loop-with-first" role="main">
 	
-	<?php query_posts("showposts=10&cat=8"); ?>
+	<?php 
+
+	 $args = array(
+				   'cat' => '8',
+				   'post_type' => 'post',
+				   'posts_per_page' => 10,
+				   'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
+				   );
+
+	query_posts($args);
+
+
+	?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
 	<!-- article -->
@@ -30,18 +42,19 @@
 		<span class="date"><?php the_time('j F Y'); ?></span>
 		<!-- /post details -->
 		
-		<?php wpeExcerpt('wpeExcerpt40'); ?>
+		<?php wpeExcerpt('wpeExcerpt30'); ?>
 		
 	</article>
 	<!-- /article -->
 		
 	<?php endwhile;  ?>
 	<?php endif; ?>
+	<?php get_template_part('pagination'); ?>
 	<?php wp_reset_query(); ?>
 	
 	</section>
 	<!-- /section -->
 	
-<?php get_sidebar(); ?>
+<?php get_sidebar('home'); ?>
 
 <?php get_footer(); ?>

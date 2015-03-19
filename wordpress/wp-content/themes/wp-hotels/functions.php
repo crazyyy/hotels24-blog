@@ -179,8 +179,8 @@ if (function_exists('register_sidebar')) {
         'after_title' => '</h6>'
     ));
     register_sidebar(array(
-        'name' => __('Блок виджетов #1', 'wpeasy'),
-        'description' => __('Description for this widget-area...', 'wpeasy'),
+        'name' => __('Домашний виджет', 'wpeasy'),
+        'description' => __('Блок виджетов для домашней страницы', 'wpeasy'),
         'id' => 'widgetarea2',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
@@ -192,6 +192,9 @@ if (function_exists('register_sidebar')) {
 //  RU: Произвольное обрезание текста
 function wpeExcerpt20($length) {
     return 20;
+}
+function wpeExcerpt30($length) {
+    return 30;
 }
 function wpeExcerpt40($length) {
     return 40;
