@@ -203,9 +203,7 @@ header {
       border-left: 1px solid $bordercolor;
       position: relative;
 
-      &:last-child {
-         border-right: 1px solid $bordercolor;
-      }
+
       a {
          height: 39px;
          border-bottom: 3px solid transparent;
@@ -214,27 +212,89 @@ header {
          color: #444;
          display: block;
          padding: 12px 12px 10px;
-      }
-      &:hover {
-         a {
-            border-color: #454545;
-         }
+
       }
       .sub-menu {
-         display: none;
          position: absolute;
-         left: 0;
-         top: 41px;
+         width: 280px;
+         left: -1px;
+         top: 40px;
          z-index: 5;
-         padding: 0 !important;
-         background-color: blue;
+         padding: 0;
+         margin: 0;
+         background-color: #ececec;
+         display: none;
          li {
+            border: 0;
+            display: block;
+            position: relative;
+            width: 100%;
+            border-bottom: 1px solid #d4d4d4 !important;
+            &:hover {
+               background-color: #dcdcdc;
+               border-bottom: 1px solid #d4d4d4 !important;
+            }
+            a {
+               border: 0;
+            }
             ul {
+               display: block;
+               position: absolute;
+               left: 280px;
+               top: 0;
+               background-color: #d4d4d4;
+               li {
+                  border-bottom: 1px solid #dcdcdc !important;
+                  &:after {
+                     display: none;
+                  }
+               }
+            }
+         }
+         .menu-item-has-children {
+            &:after {
+               position: absolute;
+               top: 15px;
+               right: 9px;
+               display: block;
+               content: '';
+               @include sprite($sprite-ico-arrow-right);
+            }           
+         }
+      }
+      &:hover {
+         border-bottom: 3px solid #454545;
+         .sub-menu {
+            display: block;
+            .sub-menu {
                display: none;
+            }
+            li {
+               &:hover {
+                  .sub-menu {
+                     display: block;                   
+                  }
+               }
             }
          }
       }
+      &:last-child {
+         border-right: 1px solid $bordercolor;
+      }
+      &:nth-child(2):hover,
+      &:nth-child(2).current-menu-item{
+         border-bottom: 3px solid #30c0c8;
+      }
+      &:nth-child(3):hover,
+      &:nth-child(3).current-menu-item {
+         border-bottom: 3px solid #ff6e05;
+      }
+      &:nth-child(4):hover,
+      &:nth-child(4).current-menu-item {
+         border-bottom: 3px solid #a8d031;
+      }
    }
+
 }
 .nav-more-block {
    min-height: 75px;

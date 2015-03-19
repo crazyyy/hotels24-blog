@@ -36,5 +36,5 @@
 	</section>
 	<!-- /section -->
 	
-<?php get_sidebar('single'); ?>
+<?php get_sidebar('tests'); ?>
 <?php get_footer(); ?>
