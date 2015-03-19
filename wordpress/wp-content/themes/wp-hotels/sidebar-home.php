@@ -40,40 +40,24 @@
  		<div class="widget widget-manual-popular">
  			<h6>Популярное</h6>
  			<ul>
- 				<li>
- 					<a href="#">
- 						<img src="" alt="">
- 						<span>Новый год во Львове: подарите близким средневековую сказку!</span>
- 					</a>
- 				</li>
- 				<li>
- 					<a href="#">
- 						<img src="" alt="">
- 						<span>Вперед в прошлое: уникальный музей ретро-автомобилей в Запорожье </span>
- 					</a>
- 				</li>
- 				<li>
- 					<a href="#">
- 						<img src="" alt="">
- 						<span>Новый 2015 год в Буковеле. Актуальные цены на проживание</span>
- 					</a>
- 				</li>
- 				<li>
- 					<a href="#">
- 						<img src="" alt="">
- 						<span>10 способов сэкономить на путешествии по Европе</span>
- 					</a>
- 				</li>
- 				<li>
- 					<a href="#">
- 						<img src="" alt="">
- 						<span>Достопримечательности Центральной Украины: путешествие по интересным местам 5 областей</span>
- 					</a>
- 				</li>
- 			</ul>
+ 			<?php query_posts("showposts=5&cat=8"); ?>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<li>
+					<a class="clearfix" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+						<?php if ( has_post_thumbnail()) :
+						the_post_thumbnail('medium');
+						else: ?>
+						<img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
+						<?php endif; ?>
+						<span><?php the_title(); ?></span>
+					</a>
+				</li>
+			<?php endwhile; endif; ?>
+			<?php wp_reset_query(); ?>
+			</ul>
  		</div>
  		<!-- /.widget widget-manual-popular -->
- 
-	<?php endif; ?>
+
+ 	<?php endif; ?>
 </aside>
 <!-- /sidebar -->
