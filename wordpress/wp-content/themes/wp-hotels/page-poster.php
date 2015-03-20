@@ -34,16 +34,19 @@
 			else  {
 				// echo 'не сегодня';
 			}
-			 $a = $a+1;
+			
 		?>
 
 		<div class="mounth-date-big">
-			<?php $dateformatstring = "F Y";
+
+			<?php 
+
+$a = $a+1;
+			$dateformatstring = "F Y";
 			$unixtimestamp = strtotime(get_field('date'));
 			$dateForFirthtTime = date_i18n($dateformatstring, $unixtimestamp);
 			if($dateForFirthtTime != $checkDate & $a>1) echo $dateForFirthtTime;
 			if($a>1)$checkDate = $dateForFirthtTime;
-			// var_dump($checkDate);
 			?>
 		</div><!-- mounth-date-big -->
 
