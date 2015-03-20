@@ -21,11 +21,9 @@ $args = array (
     ),
 );
 ?>
-
 	<?php
 		query_posts($args); 
 	?>
-
 
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
