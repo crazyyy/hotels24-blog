@@ -317,7 +317,8 @@ function qtranxf_add_admin_footer_js ( $enqueue_script=false ) {
 	if($q_config['url_mode']==QTX_URL_DOMAINS){
 		$config['domains']=$q_config['domains'];
 	}
-	$config['url_info_home']=$q_config['url_info']['home'];
+	$homeinfo=qtranxf_get_home_info();
+	$config['url_info_home']=trailingslashit($homeinfo['path']);//$q_config['url_info']['home'];
 	$config['flag_location']=qtranxf_flag_location();
 	$config['js']=array();
 	$config['flag']=array();
@@ -450,10 +451,10 @@ function qtranxf_add_admin_css () {
 }
 
 function qtranxf_admin_head() {
-	//qtranxf_add_css();// Since 3.2.5 no longer needed
+	//qtranxf_add_css();//Since 3.2.5 no longer needed
 	qtranxf_add_admin_css();
 	qtranxf_add_admin_head_js();
-	//since 3.2.7 qtranxf_optionFilter('disable');//why this is here?
+	//Since 3.2.7 qtranxf_optionFilter('disable');//why this is here?
 }
 add_action('admin_head', 'qtranxf_admin_head');
 
@@ -1148,6 +1149,11 @@ function qtranxf_conf() {
 					<label><input type="radio" name="use_strftime" value="<?php echo QTX_STRFTIME; ?>" <?php checked($q_config['use_strftime'],QTX_STRFTIME); ?>/> <?php _e('Use strftime instead of date.', 'qtranslate'); ?></label><br/>
 					<label><input type="radio" name="use_strftime" value="<?php echo QTX_STRFTIME_OVERRIDE; ?>" <?php checked($q_config['use_strftime'],QTX_STRFTIME_OVERRIDE); ?>/> <?php _e('Use strftime instead of date and replace formats with the predefined formats for each language.', 'qtranslate'); ?></label><br/>
 					<small><?php _e('Depending on the mode selected, additional customizations of the theme may be needed.', 'qtranslate'); ?></small>
+					<?php /*
+					<br/><br/>
+					<label><?php _e('If one of the above options "... replace formats with the predefined formats for each language" is in use, then exclude the following formats from being overridden:', 'qtranslate'); ?></label><br/>
+					<input type="text" name="ex_date_formats" id="qtranxs_ex_date_formats" value="<?php echo isset($q_config['ex_date_formats']) ? implode(' ',$q_config['ex_date_formats']) : QTX_EX_DATE_FORMATS_DEFAULT; ?>" style="width:100%"><br/>
+					*/ ?>
 				</td>
 			</tr>
 			<tr valign="top">
