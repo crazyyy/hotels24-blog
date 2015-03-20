@@ -2,41 +2,51 @@
 	
 	<!-- section -->
 	<section class="loop-with-first" role="main">
-	
-<?php 
-$today = date('Ymd');
-$args = array (
-    'post_type' => 'posters',
-    'meta_query' => array(
-		array(
-	        'key'		=> 'start_date',
-	        'compare'	=> '<=',
-	        'value'		=> $today,
-	    ),
-	     array(
-	        'key'		=> 'end_date',
-	        'compare'	=> '>=',
-	        'value'		=> $today,
-	    )
-    ),
-);
-?>
-	<?php query_posts($args); ?>
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	ssss9111
+<?php 
+	// args
+	$args = array(
+		'post_type'		=> 'posters',
+		'posts_per_page'	=> -1,
+		'meta_key'		=> 'date',
+		'orderby'		=> 'meta_value_num',
+		'order'			=> 'ASC'
+	);
+	// query
+	$wp_query = new WP_Query( $args );
+// loop
+while( $wp_query->have_posts() ) { $wp_query->the_post(); ?>
+
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix looper'); ?>>
+
 	
+
+
+	<div class="mounth-date-big">
+		<?php $dateformatstring = "F";
+		$unixtimestamp = strtotime(get_field('date'));
+		echo date_i18n($dateformatstring, $unixtimestamp); ?>
+	</div><!-- mounth-date-big -->
+	
+			<div class="big-date">
+				<span class="daydate"><?php $dateformatstring = "d";
+					$unixtimestamp = strtotime(get_field('date'));
+					echo date_i18n($dateformatstring, $unixtimestamp); ?>
+				</span>
+				<span class="mounthdate"><?php $dateformatstring = "F";
+					$unixtimestamp = strtotime(get_field('date'));
+					echo date_i18n($dateformatstring, $unixtimestamp); ?></span>
+			</div>
+
+
 		<!-- post thumbnail -->
 		<a rel="nofollow" class="feature-img" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 			<?php if ( has_post_thumbnail()) :
 				the_post_thumbnail('medium');	
 			else: ?>
 			<img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
-			<?php endif; ?>
-			<span class="category-hl">Отдыхаем в Украине</span>
-		</a>
+		<?php endif; ?></a>
 		<!-- /post thumbnail -->
 		
 		<!-- post title -->
@@ -46,17 +56,24 @@ $args = array (
 		<!-- /post title -->
 		
 		<!-- post details -->
-		<span class="date"><?php the_time('j F Y'); ?></span>
+		<span class="date"><?php the_time('j F Y'); ?> <span><?php the_time('G:i'); ?></span></span>
+		<span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?></span>
+		<span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span>
 		<!-- /post details -->
 		
 		<?php wpeExcerpt('wpeExcerpt40'); ?>
 		
+		<?php edit_post_link(); ?>
+		
 	</article>
 	<!-- /article -->
-		
-	<?php endwhile;  ?>
-	<?php endif; ?>
-	<?php wp_reset_query(); ?>
+
+
+
+<?php  } ?>
+
+
+
 	
 	</section>
 	<!-- /section -->
