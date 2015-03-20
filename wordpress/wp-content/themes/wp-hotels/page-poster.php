@@ -15,7 +15,11 @@
 		// query
 		$wp_query = new WP_Query( $args );
 	// loop
+
+   $checkDate = null;
+
 	while( $wp_query->have_posts() ) { $wp_query->the_post(); ?>
+	    
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix looper'); ?>>
 		<?php 	
@@ -30,12 +34,17 @@
 			else  {
 				// echo 'не сегодня';
 			}
+			 $a = $a+1;
 		?>
 
 		<div class="mounth-date-big">
 			<?php $dateformatstring = "F Y";
 			$unixtimestamp = strtotime(get_field('date'));
-			echo date_i18n($dateformatstring, $unixtimestamp); ?>
+			$dateForFirthtTime = date_i18n($dateformatstring, $unixtimestamp);
+			if($dateForFirthtTime != $checkDate & $a>1) echo $dateForFirthtTime;
+			if($a>1)$checkDate = $dateForFirthtTime;
+			// var_dump($checkDate);
+			?>
 		</div><!-- mounth-date-big -->
 
 		<!-- post thumbnail -->
@@ -44,7 +53,7 @@
 				the_post_thumbnail('medium');	
 			else: ?>
 			<img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
-		<?php endif; ?>
+			<?php endif; ?>
 			<div class="big-date">
 				<span class="daydate"><?php $dateformatstring = "d";
 					$unixtimestamp = strtotime(get_field('date'));
@@ -68,14 +77,8 @@
 		
 	</article>
 	<!-- /article -->
+	<?php  } ?>
 
-
-
-<?php  } ?>
-
-
-
-	
 	</section>
 	<!-- /section -->
 	
