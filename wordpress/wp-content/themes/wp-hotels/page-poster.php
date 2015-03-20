@@ -3,32 +3,48 @@
 	<!-- section -->
 	<section class="loop-with-first" role="main">
 
-<?php 
-	// args
-	$args = array(
-		'post_type'		=> 'posters',
-		'posts_per_page'	=> -1,
-		'meta_key'		=> 'date',
-		'orderby'		=> 'meta_value_num',
-		'order'			=> 'ASC'
-	);
-	// query
-	$wp_query = new WP_Query( $args );
-// loop
-while( $wp_query->have_posts() ) { $wp_query->the_post(); ?>
+	<?php 
+		// args
+		$args = array(
+			'post_type'		=> 'posters',
+			'posts_per_page'	=> -1,
+			'meta_key'		=> 'date',
+			'orderby'		=> 'meta_value_num',
+			'order'			=> 'ASC'
+		);
+		// query
+		$wp_query = new WP_Query( $args );
+	// loop
+	while( $wp_query->have_posts() ) { $wp_query->the_post(); ?>
+		<!-- article -->
+		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix looper'); ?>>
+		<?php 	
+			$currdate = date("d.F.Y");
+			$dateformatstring = "d.F.Y";
 
-	<!-- article -->
-	<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix looper'); ?>>
+			$unixtimestamp = strtotime(get_field('date'));
+			$postersdate = date_i18n($dateformatstring, $unixtimestamp);
+			if ($currdate == $postersdate ) {
+				echo '<h6 class="day-today">Сегодня</h6>';
+			}
+			else  {
+				// echo 'не сегодня';
+			}
+		?>
 
-	
+		<div class="mounth-date-big">
+			<?php $dateformatstring = "F Y";
+			$unixtimestamp = strtotime(get_field('date'));
+			echo date_i18n($dateformatstring, $unixtimestamp); ?>
+		</div><!-- mounth-date-big -->
 
-
-	<div class="mounth-date-big">
-		<?php $dateformatstring = "F";
-		$unixtimestamp = strtotime(get_field('date'));
-		echo date_i18n($dateformatstring, $unixtimestamp); ?>
-	</div><!-- mounth-date-big -->
-	
+		<!-- post thumbnail -->
+		<a rel="nofollow" class="feature-img" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+			<?php if ( has_post_thumbnail()) :
+				the_post_thumbnail('medium');	
+			else: ?>
+			<img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
+		<?php endif; ?>
 			<div class="big-date">
 				<span class="daydate"><?php $dateformatstring = "d";
 					$unixtimestamp = strtotime(get_field('date'));
@@ -38,15 +54,7 @@ while( $wp_query->have_posts() ) { $wp_query->the_post(); ?>
 					$unixtimestamp = strtotime(get_field('date'));
 					echo date_i18n($dateformatstring, $unixtimestamp); ?></span>
 			</div>
-
-
-		<!-- post thumbnail -->
-		<a rel="nofollow" class="feature-img" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-			<?php if ( has_post_thumbnail()) :
-				the_post_thumbnail('medium');	
-			else: ?>
-			<img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
-		<?php endif; ?></a>
+		</a>
 		<!-- /post thumbnail -->
 		
 		<!-- post title -->
@@ -54,16 +62,9 @@ while( $wp_query->have_posts() ) { $wp_query->the_post(); ?>
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 		</h2>
 		<!-- /post title -->
-		
-		<!-- post details -->
-		<span class="date"><?php the_time('j F Y'); ?> <span><?php the_time('G:i'); ?></span></span>
-		<span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?></span>
-		<span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span>
-		<!-- /post details -->
-		
+
 		<?php wpeExcerpt('wpeExcerpt40'); ?>
 		
-		<?php edit_post_link(); ?>
 		
 	</article>
 	<!-- /article -->
