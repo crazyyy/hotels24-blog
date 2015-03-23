@@ -2,6 +2,7 @@
 	
 	<!-- section -->
 	<section class="loop-with-first" role="main">
+	<?php get_template_part('mailing-form'); ?>
 	
 	<?php 
 

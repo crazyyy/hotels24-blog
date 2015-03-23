@@ -71,6 +71,7 @@ $a = $a+1;
 		
 		<!-- post title -->
 		<h2 class="looper-title inner-title">
+		
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 		</h2>
 		<!-- /post title -->
