@@ -2,7 +2,7 @@
 	
 	<!-- section -->
 	<section class="loop-with-first" role="main">
-	<?php get_template_part('mailing-form'); ?>
+	
 	
 	<?php 
 
@@ -39,7 +39,7 @@
 		<!-- /post title -->
 		
 		<!-- post details -->
-		<span class="date"><?php the_time('j F Y'); ?></span>
+		<span class="date"><?php the_time('d F Y'); ?></span>
 		<!-- /post details -->
 		
 		<?php wpeExcerpt('wpeExcerpt30'); ?>
@@ -51,7 +51,7 @@
 	<?php endif; ?>
 	<?php get_template_part('pagination'); ?>
 	<?php wp_reset_query(); ?>
-	
+	<?php get_template_part('mailing-form'); ?>
 	</section>
 	<!-- /section -->
 	
