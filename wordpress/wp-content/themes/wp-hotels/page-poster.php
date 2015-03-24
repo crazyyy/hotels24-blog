@@ -87,6 +87,7 @@
 		<!-- /article -->
 	<?php  } ?>
 
+	<?php get_template_part('see-also'); ?>
 	</section>
 	<!-- /section .page-poster-list -->
 	
