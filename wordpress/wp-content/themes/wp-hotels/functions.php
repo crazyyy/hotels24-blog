@@ -187,6 +187,15 @@ if (function_exists('register_sidebar')) {
         'before_title' => '<h6>',
         'after_title' => '</h6>'
     ));
+    register_sidebar(array(
+        'name' => __('Виджеты для афиши', 'wpeasy'),
+        'description' => __('Ж и Ш пиши с И', 'wpeasy'),
+        'id' => 'widgetarea3',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h6>',
+        'after_title' => '</h6>'
+    ));
 }
 
 //  RU: Произвольное обрезание текста
