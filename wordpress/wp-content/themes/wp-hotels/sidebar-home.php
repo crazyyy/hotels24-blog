@@ -41,9 +41,6 @@
 				}
 				else  {
 					echo '<li class="month">';
-					echo '<h5>';
-					echo $monthdate;
-					echo '</h5>';
 				}
 			?>
 
@@ -58,7 +55,7 @@
 				$dateDate = date_i18n($datedateformatstring, $unixtimestamp);
 				$monthsDate = date_i18n($monthsdateformatstring, $unixtimestamp);
 				if($dateForFirthtTime != $checkDate & $a>1) 
-					echo '<h6 class="mounth-date-big">'.$dateForFirthtTime.'</h6><!-- mounth-date-big -->';
+					echo '<h5 class="month-visible">'.$dateForFirthtTime.'</h5>';
 				if($a>1)$checkDate = $dateForFirthtTime;
 			?>
 		
