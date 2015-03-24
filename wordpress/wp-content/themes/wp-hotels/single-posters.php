@@ -69,5 +69,5 @@
 	</section>
 	<!-- /section -->
 	
-<?php get_sidebar('single'); ?>
+<?php get_sidebar('posters'); ?>
 <?php get_footer(); ?>
