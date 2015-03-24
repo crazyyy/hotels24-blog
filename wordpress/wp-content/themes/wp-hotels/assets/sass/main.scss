@@ -298,19 +298,23 @@ header {
 }
 .nav-more-block {
    min-height: 75px;
-   vertical-align: middle;
+/*    vertical-align: middle; */
    display: none;
    span {
       display: table-cell;
       min-height: 75px;
+      height: 92px;
       color: #444;
       font-size: 30px;
       line-height: 2;
       width: 140px;
+      position: relative;
+      top: 18px;
    }
    .nav-more-menu {
       display: table-cell;
       width: 840px;
+      margin: 0;
       li {
          display: inline-block;
          width: 24%;
