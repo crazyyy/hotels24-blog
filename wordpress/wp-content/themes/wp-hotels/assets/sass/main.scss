@@ -863,7 +863,14 @@ article {
    article {
       background-color: transparent;
       height: auto !important;
+      .includer-article {
+         background-color: #ffffff;
+      }
+      &:nth-child(6) {
+         margin-bottom: 30px;
+      }
    }
+
    .article-day-today {
       height: 260px !important;
       h6 {
@@ -925,7 +932,7 @@ article {
       position: relative;
    }
    .big-date {
-      background-color: #4a4a4a;
+      background-color: rgba(0, 0, 0, 0.6);
       width: 50px;
       height: 50px;
       text-align: center;

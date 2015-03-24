@@ -8,30 +8,67 @@
 		<div class="widget widget-posters-grey">
 			<h6>Афиша событий <a href="#">смотреть все</a></h6>
 			<ul>
-				<li class="today">
-					<h5>Сегодня</h5>
-					<a href="#">Новый год во Львове: подарите близким средневековую сказку!<span class="cluster">16<span>октября</span></span></a>
-				</li>
-				<li class="month-october">
-					<h5>Октябрь, 2014</h5>
-					<a href="#">Вперед в прошлое: уникальный музей ретро-автомобилей в Запорожье <span class="cluster">16<span>октября</span></span></a>
-				</li>
-				<li class="month-october">
-					<h5>Октябрь, 2014</h5>
-					<a href="#">Навстречу неизведанному: сколько стоит полет в космос<span class="cluster">18<span>октября</span></span></a>
-				</li>
-				<li class="month-november">
-					<h5>Ноябрь, 2014</h5>
-					<a href="#">Навстречу неизведанному: сколько стоит полет в космос<span class="cluster">>01<span>ноября</span></span></a>
-				</li>
-				<li class="month-november">
-					<h5>Октябрь, 2014</h5>
-					<a href="#">Навстречу неизведанному: сколько стоит полет в космос<span class="cluster">88<span>ноября</span></span></a>
-				</li>
+			<?php 
+				// args
+				$args = array(
+					'post_type'		=> 'posters',
+					'posts_per_page'	=> 5,
+					'meta_key'		=> 'date',
+					'orderby'		=> 'meta_value_num',
+					'order'			=> 'ASC'
+				);
+				// query
+				$wp_query = new WP_Query( $args );
+				// loop
+
+				$checkDate = null;
+				while( $wp_query->have_posts() ) { $wp_query->the_post(); 
+			?>
+	    
+			<!-- article -->
+			<?php 	
+				$currdate = date("d.m.Y");
+				$dateformatstrings = "d.m.Y";
+				$monthformatstrings = "F";
+
+				$unixtimestamp = strtotime(get_field('date'));
+				$postersdate = date_i18n($dateformatstrings, $unixtimestamp);
+				$monthdate = date_i18n($monthformatstrings, $unixtimestamp);
+				if ($currdate == $postersdate ) {
+
+					echo '<li class="today">';
+					echo '<h5>Сегодня</h5>';
+				}
+				else  {
+					echo '<li class="month">';
+					echo '<h5>';
+					echo $monthdate;
+					echo '</h5>';
+				}
+			?>
+
+			<?php 
+				$a = $a+1;
+
+				$dateformatstring = "F Y";
+				$datedateformatstring = "d";
+				$monthsdateformatstring = "F";
+				$unixtimestamp = strtotime(get_field('date'));
+				$dateForFirthtTime = date_i18n($dateformatstring, $unixtimestamp);
+				$dateDate = date_i18n($datedateformatstring, $unixtimestamp);
+				$monthsDate = date_i18n($monthsdateformatstring, $unixtimestamp);
+				if($dateForFirthtTime != $checkDate & $a>1) 
+					echo '<h6 class="mounth-date-big">'.$dateForFirthtTime.'</h6><!-- mounth-date-big -->';
+				if($a>1)$checkDate = $dateForFirthtTime;
+			?>
+		
+				<a href="<?php the_permalink(); ?>"><?php the_title(); ?> <span class="cluster"><?php echo $dateDate; ?><span><?php echo $monthsDate; ?></span></span></a>
+			</li>
+			<?php  } ?>
 			</ul>
 		</div>
 		<!-- /.widget widget-posters-grey -->
- 		
+		
  		<div class="widget widget-manual-popular">
  			<h6>Популярное</h6>
  			<ul>

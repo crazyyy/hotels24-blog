@@ -12,7 +12,7 @@
 			<p class="copyright">
 				Перепечатка и использование любых материалов, размещенных на нашем сайте, возможны только с письменного разрешения, с указанием названия источника и наличием активной гиперссылки на Hotels24.ua.
 			</p>
-			<p>По вопросам сотрудничества пишите:  viktoriya.dovhan@hotels24.ua</p>
+			<p>По вопросам сотрудничества пишите:  <a href="mailto:viktoriya.dovhan@hotels24.ua">viktoriya.dovhan@hotels24.ua</a></p>
 			<!-- /copyright -->
 		</div>
 		<!-- /.mainfooter -->
@@ -38,14 +38,6 @@
 		  event.preventDefault();
 		});
 		// open-close .more in nav
-
-		// in .widget-posters-grey display only first mounth
-		var monthOctober = document.querySelector(".month-october");
-		var monthNovember = document.querySelector(".month-november");
-
-		monthOctober.classList.add("month-visible");
-		monthNovember.classList.add("month-visible");
-		// in .widget-posters-grey display only first mounth
 
 	</script>
 </body>
