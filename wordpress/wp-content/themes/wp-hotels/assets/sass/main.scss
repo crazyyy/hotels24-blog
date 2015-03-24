@@ -783,7 +783,7 @@ article {
          }
       }
       &:nth-child(6) {
-         margin-bottom: 110px;
+         margin-bottom: 130px;
          .category-hl {
             background-color: #a8d031;
          }
@@ -818,22 +818,26 @@ article {
       h6 {
          color: #333333;
          font-size: 20px;
+         margin: 0 0 12px;
       }
       form {
          width: 100%;
+         height: 60px;
          padding: 12px 40px 12px 60px;
-         background-color: #fff;
+         background-color: #fafafa;
+         position: relative;
          input,
          button {
             display: inline-block;
             padding: 5px;
             height: 30px;
             margin: 0 5px;
-            border-radius: 5px;
-            width: 170px;
+            border-radius: 2px;
+            width: 160px;
          }
          input {
             text-align: left;
+            height: 32px;
             border: 1px solid #d7d7d7;
          }
          button {
@@ -842,7 +846,14 @@ article {
             border: 1px solid #5299c7;
             font-size: 18px;
             color: #fff;
-            height: 28px;
+         }
+         &:before {
+            @include sprite($sprite-ico-mailform);
+            position: absolute;
+            top: 5px;
+            left: 7px;
+            content: '';
+            display: block;
          }
       }
    }
