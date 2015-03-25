@@ -3,7 +3,7 @@
 
 	<?php if ( is_active_sidebar('widgetarea1') ) : ?>
 
-		<div class="widget widget-popular-hotels">
+<div class="widget widget-popular-hotels">
  			<h6>Популярные гостиницы Киева</h6>
  			<ul>
  				<li class="hotel-has-halfprice hotel-has-online">
@@ -56,6 +56,7 @@
  		</div>
  		<!-- /.widget widget-popular-hotels -->
 
+		
 		<?php dynamic_sidebar( 'widgetarea1' ); ?>
 	<?php else : ?>
  		
