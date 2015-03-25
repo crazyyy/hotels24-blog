@@ -519,13 +519,14 @@ article {
       width: 100%;
    }
    li {
-      margin: 0 0 15px;
-      padding: 7px 6px 0;
+      margin: 0 0 15px !important;
+      padding: 7px 6px 0 !important;
       position: relative;
       display: block;
       width: 100%;
       a {
          display: block;
+         text-decoration: none;
       }
       &:after {
          content: '1';
@@ -566,7 +567,7 @@ article {
       img {
          width: 135px;
          height: 90px;
-         margin: 0 10px 0 0;
+         margin: 0 8px 0 0;
          float: left;
       }
       span {
