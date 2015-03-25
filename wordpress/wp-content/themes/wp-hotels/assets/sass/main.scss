@@ -585,7 +585,7 @@ article {
    &:after {
       content: '';
       display: block;
-      height: 31px;
+      height: 21px;
       width: 100%;
    }
    &:before {
@@ -593,6 +593,7 @@ article {
    }
    &:after {
       background-image: url(../img/widget-posters-grey-after.png);
+      height: 31px;
    }
    h6 {
       margin: 0 25px 16px;
@@ -601,13 +602,15 @@ article {
       a{
          color: #3c89b5;
          font-size: 14px;
-         margin: 0 0 0 15px;
+         margin: 0 0 0 12px;
          text-decoration: none;
       }
    }
    ul {
+      margin: 0;
       li {
          padding: 0 25px 10px;
+         margin: 0 0 4px;
          h5 {
             display: none;
             padding: 0 0 6px;
@@ -638,10 +641,15 @@ article {
                   display: block;
                   text-align: center;
                   font-size: 10px;
+                  text-transform: lowercase;
                }
                &:hover {
                   color: #000;
                }
+            }
+            &:last-child {
+               padding-bottom: 0;
+               margin-bottom: 0;
             }
          }
       }
@@ -663,8 +671,10 @@ article {
          }
       }
       .month-visible {
-         padding: 10px 25px;
+         padding: 0 0 7px;
          display: block;
+         font-size: 14px;
+         font-weight: normal;
       }
    }
 }

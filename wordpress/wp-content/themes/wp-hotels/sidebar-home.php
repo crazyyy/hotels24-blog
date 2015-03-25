@@ -129,7 +129,7 @@
 			<?php 
 				$a = $a+1;
 
-				$dateformatstring = "F Y";
+				$dateformatstring = "F, Y";
 				$datedateformatstring = "d";
 				$monthsdateformatstring = "F";
 				$unixtimestamp = strtotime(get_field('date'));
