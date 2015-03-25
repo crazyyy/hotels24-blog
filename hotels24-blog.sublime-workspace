@@ -151,63 +151,15 @@
 			"file": "wordpress/wp-content/themes/wp-hotels/assets/sass/main.scss",
 			"settings":
 			{
-				"buffer_size": 27480,
+				"buffer_size": 30561,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wordpress/wp-content/themes/wp-hotels/page-home.php",
+			"file": "wordpress/wp-content/themes/wp-hotels/nearby-hotels.php",
 			"settings":
 			{
-				"buffer_size": 1565,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wordpress/wp-content/themes/wp-hotels/mailing-form.php",
-			"settings":
-			{
-				"buffer_size": 278,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wordpress/wp-content/themes/wp-hotels/single-posters.php",
-			"settings":
-			{
-				"buffer_size": 2939,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wordpress/wp-content/themes/wp-hotels/page-poster.php",
-			"settings":
-			{
-				"buffer_size": 2381,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wordpress/wp-content/themes/wp-hotels/footer.php",
-			"settings":
-			{
-				"buffer_size": 1455,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wordpress/wp-content/themes/wp-hotels/single.php",
-			"settings":
-			{
-				"buffer_size": 1842,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wordpress/wp-content/themes/wp-hotels/loop.php",
-			"settings":
-			{
-				"buffer_size": 1435,
+				"buffer_size": 1274,
 				"line_ending": "Unix"
 			}
 		},
@@ -215,7 +167,7 @@
 			"file": "wordpress/wp-content/themes/wp-hotels/functions.php",
 			"settings":
 			{
-				"buffer_size": 26121,
+				"buffer_size": 26467,
 				"line_ending": "Unix"
 			}
 		}
@@ -497,16 +449,33 @@
 	},
 	"expanded_folders":
 	[
-		"/Z/hotels24-blog",
-		"/Z/hotels24-blog/wordpress",
-		"/Z/hotels24-blog/wordpress/wp-content",
-		"/Z/hotels24-blog/wordpress/wp-content/themes",
-		"/Z/hotels24-blog/wordpress/wp-content/themes/wp-hotels",
-		"/Z/hotels24-blog/wordpress/wp-content/themes/wp-hotels/assets",
-		"/Z/hotels24-blog/wordpress/wp-content/themes/wp-hotels/assets/sass"
+		"//h24-prog-verst/Work/hotels24-blog",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/assets",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/assets/sass"
 	],
 	"file_history":
 	[
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/sidebar-home.php",
+		"/Z/hotels24-blog/wordpress/wp-content/themes/wp-hotels/sidebar-posters.php",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/sidebar.php",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/sidebar-single.php",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/sidebar-page.php",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/loop.php",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/page.php",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/single.php",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/footer.php",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/archive-posters.php",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/mailing-form.php",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/page-home.php",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/sidebar-posters.php",
+		"/Z/hotels24-blog/wordpress/wp-content/themes/wp-hotels/category-posters.php",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/single-posters.php",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/page-poster.php",
+		"//h24-prog-verst/Work/hotels24-blog/wordpress/wp-content/themes/wp-hotels/assets/sass/_sprite.scss",
 		"/Z/hotels24-blog/wordpress/wp-content/themes/wp-hotels/mailing-form.php",
 		"/Z/hotels24-blog/wordpress/wp-content/themes/wp-hotels/header.php",
 		"/Z/hotels24-blog/wordpress/wp-content/themes/wp-hotels/pagination.php",
@@ -617,24 +586,7 @@
 		"/Z/client/public/templates/review/full-page-review.html",
 		"/Z/client/node_modules/gulp-cache/node_modules/lodash-node/compat/objects/isDate.js",
 		"/Z/client/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/script-defer.json",
-		"/Z/client/.sass-cache/05ff3ddd07b43fcee779dd8e160a98aa789d1545/screen.scssc",
-		"/D/Dropbox/Soft/SublimeText3/Data/Packages/User/Default (Windows).sublime-keymap",
-		"/Z/client/public/index_test.html",
-		"/Z/client/public/index_stage.html",
-		"/Z/client/public/index_prod.html",
-		"/D/Dropbox/Soft/SublimeText3/Data/Packages/Default/Default (Windows).sublime-keymap",
-		"/D/Dropbox/Soft/SublimeText3/Data/Packages/Emmet/Default (Windows).sublime-keymap",
-		"/Z/client/public/js/views/header/header.js",
-		"/Z/client/public/templates/review/container-review.html",
-		"/Z/client/temp.html",
-		"/Z/client/public/templates/errors/404.html",
-		"/Z/client/public/templates/popup/popup.html",
-		"/Z/client/public/templates/booking-history/status-block.html",
-		"/Z/client/public/templates/panel/pending-review.html",
-		"/Z/client/assets/sass/_sprite.scss",
-		"/Z/client/public/bootstrap/css/bootstrap.css",
-		"/Z/client/assets/sass/_base64.scss",
-		"/Z/client/temp.css"
+		"/Z/client/.sass-cache/05ff3ddd07b43fcee779dd8e160a98aa789d1545/screen.scssc"
 	],
 	"find":
 	{
@@ -652,6 +604,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"last-c",
+			"loop-with-first",
+			".widget",
+			"big-date",
+			"mounth-date-big",
+			"img",
+			"ico-mailform",
 			".head-go-botton",
 			"comments",
 			"main",
@@ -772,14 +731,7 @@
 			"change_user_email",
 			"mail",
 			"ctrl+shift+d",
-			"ctrl+d",
-			"]\n",
-			"button ",
-			"error_fields",
-			".main-content-account",
-			"main-content-account",
-			".main-content-account",
-			"review-thankyou-wrapper"
+			"ctrl+d"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -899,15 +851,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 27480,
+						"buffer_size": 30561,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17226,
-								17226
+								25451,
+								25451
 							]
 						],
 						"settings":
@@ -916,61 +868,61 @@
 							"apply_syntax_touched": true,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
-								"bh_round_content"
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
 							"incomplete_sync": null,
@@ -982,7 +934,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 19348.0,
+						"translation.y": 28766.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -990,19 +942,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "wordpress/wp-content/themes/wp-hotels/page-home.php",
+					"file": "wordpress/wp-content/themes/wp-hotels/nearby-hotels.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1565,
+						"buffer_size": 1274,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								159,
-								159
+								674,
+								674
 							]
 						],
 						"settings":
@@ -1012,61 +964,61 @@
 							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
-								"bh_round_content"
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
 							"incomplete_sync": null,
@@ -1075,100 +1027,6 @@
 							"synced": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wordpress/wp-content/themes/wp-hotels/mailing-form.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 278,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								208,
-								208
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"apply_syntax_touched": true,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"side_bar_folders_auto_load_folder": 1,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1178,494 +1036,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "wordpress/wp-content/themes/wp-hotels/single-posters.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2939,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								711,
-								711
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"apply_syntax_touched": true,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"side_bar_folders_auto_load_folder": 1,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "wordpress/wp-content/themes/wp-hotels/page-poster.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2381,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1205,
-								1205
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"apply_syntax_touched": true,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"side_bar_folders_auto_load_folder": 1,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1008.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "wordpress/wp-content/themes/wp-hotels/footer.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1455,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1427,
-								1427
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"apply_syntax_touched": true,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"side_bar_folders_auto_load_folder": 1,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 480.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "wordpress/wp-content/themes/wp-hotels/single.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1842,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1808,
-								1813
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"apply_syntax_touched": true,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"side_bar_folders_auto_load_folder": 1,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 360.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "wordpress/wp-content/themes/wp-hotels/loop.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1435,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1248,
-								65
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"apply_syntax_touched": true,
-							"bh_regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"side_bar_folders_auto_load_folder": 1,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
+					"buffer": 2,
 					"file": "wordpress/wp-content/themes/wp-hotels/functions.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 26121,
+						"buffer_size": 26467,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6108,
-								6108
+								2348,
+								2348
 							]
 						],
 						"settings":
@@ -1675,26 +1059,11 @@
 							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -1705,6 +1074,26 @@
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -1720,16 +1109,11 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
 							"incomplete_sync": null,
@@ -1741,10 +1125,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 501.0,
+						"translation.y": 988.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
