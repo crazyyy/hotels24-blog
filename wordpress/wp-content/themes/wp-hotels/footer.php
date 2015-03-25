@@ -31,10 +31,12 @@
 		// open-close .more in nav
 		var morebutton = $( ".headnav li:last-child" );
 		morebutton.click(function() {
+
 		  $( ".nav-more-block" ).toggle( "fast", function() {
-		    // Animation complete.
+
 		  });
 		  $('.bkblock01').toggleClass( "head-go-botton" );
+		  $('.headnav li:last-child').toggleClass( "current-menu-item" );
 		  event.preventDefault();
 		});
 		// open-close .more in nav
