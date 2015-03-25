@@ -1197,7 +1197,7 @@ article {
             font-size: 14px;
             position: absolute;
             top: 20px;
-            left: 145px;
+            left: 148px;
          }
          p {
             margin: 0;
@@ -1218,6 +1218,7 @@ article {
             .price-old {
                font-size: 12px;
                margin: 0 15px 0 0;
+               text-decoration: line-through;
             }
             .price-new {
                color: #b20000;
@@ -1235,7 +1236,7 @@ article {
          &:after {
             content: 'online';
             position: absolute;
-            top: 0;
+            top: 1px;
             right: 195px;
             font-size: 10px;
             color: #3795e5;

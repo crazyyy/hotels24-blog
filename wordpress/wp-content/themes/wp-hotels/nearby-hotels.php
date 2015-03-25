@@ -1,5 +1,5 @@
 <div class="nearby-hotels">
-	<h6 class="after-content-title">Место проведения:</h6>
+	<h6 class="after-content-title">Отели рядом:</h6>
 	<ul>
 		<li class="hotel-has-halfprice hotel-has-online">
 			<img src="" alt="" class="feature-photo">
@@ -13,7 +13,7 @@
 			<img src="" alt="" class="feature-photo">
 			<span class="hotel-rating"></span>
 			<h5>Гостиница Ramada Encore Kiev</h5>
-			<p class="price"><span class="price-old">от 200 грн</span><span class="price-new">от 100 грн</span></p>
+			<p class="price"><span class="price-old">от 200 грн</span><span class="price-new">от <span class="num">100</span> грн</span></p>
 			<p class="timers">за ночь</p>
 			<a href="#" class="see-hotel">Смотреть отель</a>
 		</li>

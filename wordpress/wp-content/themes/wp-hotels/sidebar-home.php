@@ -3,7 +3,7 @@
 
 	<?php if ( is_active_sidebar('widgetarea2') ) : ?>
 		<div class="widget widget-posters-grey">
-			<h6>Афиша событий <a href="#">смотреть все</a></h6>
+			<h6>Афиша событий <a href="<?php echo home_url(); ?>/posters">смотреть все</a></h6>
 			<ul>
 			<?php 
 				// args
@@ -88,7 +88,7 @@
 	<?php else : ?>
 
 		<div class="widget widget-posters-grey">
-			<h6>Афиша событий <a href="#">смотреть все</a></h6>
+			<h6>Афиша событий <a href="<?php echo home_url(); ?>/posters">смотреть все</a></h6>
 			<ul>
 			<?php 
 				// args
