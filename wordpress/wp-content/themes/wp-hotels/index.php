@@ -1,65 +1,53 @@
 <?php get_header(); ?>
+	
 	<!-- section -->
-	<section role="main">
+	<section class="loop-with-first" role="main">
 		
-		<h1 class="ctitle">Последние записи</h1>
-		
-		
+		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 		<!-- article -->
-		<article>
-			<h2 class="title">Извините, нечего показывать ;(</h2>
+		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix looper'); ?>>
+		
+			<!-- post thumbnail -->
+			<a rel="nofollow" class="feature-img" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+				<?php if ( has_post_thumbnail()) :
+					the_post_thumbnail('medium');	
+				else: ?>
+				<img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
+				<?php endif; ?>
+				<span class="category-hl">Отдыхаем в Украине</span>
+			</a>
+			<!-- /post thumbnail -->
+			
+			<!-- post title -->
+			<h2 class="looper-title inner-title">
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+			</h2>
+			<!-- /post title -->
+			
+			<!-- post details -->
+			<span class="date"><?php the_time('d F Y'); ?></span>
+			<!-- /post details -->
+			
+			<?php wpeExcerpt('wpeExcerpt30'); ?>
+			
 		</article>
 		<!-- /article -->
-		
-		<!-- pagination -->
-		<div class="pagination">
-			<!-- noindex --><!-- /noindex -->
-		</div>
-		<!-- /pagination -->
+		<?php endwhile; else: ?>
+
+		<!-- article -->
+		<article>
+			<h2 class="title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
+		</article>
+		<!-- /article -->
+
+	<?php endif; ?>
+	
+	<?php get_template_part('mailing-form'); ?>
+	<?php get_template_part('pagination'); ?>
+	
 	</section>
 	<!-- /section -->
 	
-	<!-- sidebar -->
-	<aside class="sidebar" role="complementary">
-		<div class="widget widget-anonses">
-			<h6>Афиша событий <a href="">смотреть все</a></h6>
-			<ul>
-				<li class="today">
-					<h6>Сегодня</h6>
-					<a href="">Новый год во Львове: подарите близким средневековую сказку! </a>
-				</li>
-			</ul>
-		</div><!-- widget widget-anonses -->
-		<div class="widget widget-popular">
-			<h5>Популярное</h5>
-			<ul>
-				<li>
-					<img src="" alt="">
-					<a href="">Новый год во Львове: подарите близким средневековую сказку!</a>
-				</li>
-				<li>
-					<img src="" alt="">
-					<a href="">Вперед в прошлое: уникальный музей ретро-автомобилей в Запорожье </a>
-				</li>
-				<li>
-					<img src="" alt="">
-					<a href="">Новый 2015 год в Буковеле. Актуальные цены на проживание</a>
-				</li>
-				<li>
-					<img src="" alt="">
-					<a href="">10 способов сэкономить на путешествии по Европе</a>
-				</li>
-				<li>
-					<img src="" alt="">
-					<a href="">Достопримечательности Центральной Украины: путешествие по интересным местам 5 областей</a>
-				</li>
-				<li>
-					<img src="" alt="">
-					<a href="">Новый год во Львове: подарите близким средневековую сказку! </a>
-				</li>
-			</ul>
-		</div>
-		<!-- /.widget widget-popular -->
-	</aside>
-	<!-- /sidebar -->
+<?php get_sidebar('home'); ?>
+
 <?php get_footer(); ?>
