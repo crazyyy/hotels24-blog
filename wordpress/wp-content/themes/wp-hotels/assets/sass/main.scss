@@ -473,6 +473,7 @@ article {
             .price-old {
                font-size: 12px;
                margin: 0 15px 0 0;
+               text-decoration: line-through;
             }
             .price-new {
                color: #b20000;
@@ -1241,7 +1242,7 @@ article {
             font-size: 10px;
             color: #3795e5;
             background-color: #d9effa;
-            padding: 3px 6px;
+            padding: 3px 8px;
          }
       }
       .hotel-has-halfprice {
