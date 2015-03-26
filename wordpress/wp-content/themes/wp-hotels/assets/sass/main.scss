@@ -1025,6 +1025,9 @@ article {
    .date {
       margin: 0 30px 0 0;
    }
+   .date {
+      text-transform: lowercase;
+   }
    a {
       color: #696969;
       text-decoration: none;
@@ -1062,12 +1065,12 @@ article {
 }
 .thubma-with-socail {
    width: 620px;
-   margin: 0 0 30px;
+   margin: 0 0 20px;
    ul {
       display: block;
       float: left;
       width: 60px;
-      margin: 0 30px 0 0;
+      margin: 0 20px 0 0;
       padding: 0;
       li {
          height: 70px;
@@ -1080,7 +1083,7 @@ article {
    }
    .single-thumb {
       display: block;
-      width: 530px;
+      width: 540px;
       float: right;
       img {
          width: 100%;
@@ -1139,12 +1142,21 @@ article {
       border-top: 0;
    }
 }
+article.hentry {
+   p,
+   li {
+      line-height: 20px;
+      font-size: 16px;
+   }
+}
 .placed-id {
    table {
       width: 100%;
       padding: 30px 0;
       background-color: #fff;
       margin: 0 auto;
+      border-top: 14px solid #fff;
+      border-bottom: 14px solid #fff;
       td {
          padding: 8px 15px;
       }
@@ -1301,6 +1313,7 @@ article {
          text-align: center;
          font-size: 18px;
          font-weight: normal;
+         text-transform: lowercase;
       }
    }
    .single-title {
@@ -1310,7 +1323,7 @@ article {
    }
    .support-title {
       padding: 0 0 0 115px;
-      height: 44px;
+      height: 34px;
       display: block;
       float: left;
       text-align: center;
@@ -1319,8 +1332,8 @@ article {
          display: inline-block;
          display: table-cell;
          float: left;
-         height: 44px;
-         padding: 10px 15px 10px 10px;
+         height: 34px;
+         padding: 3px 15px 3px 10px;
          margin: 0 20px 0 0;
          background-color: #96a6a6;
          text-align: center;
@@ -1363,7 +1376,7 @@ article {
          }
       }
       .wherebuy {
-         padding: 5px 15px 5px 30px;
+         padding: 2px 15px 0 30px;
          width: 150px;
          line-height: 1.4;
          span {

@@ -180,7 +180,7 @@ msgstr "Рубрика: "
 
 #: ../single.php:39
 msgid "This post was written by "
-msgstr "Эту запись добавил "
+msgstr "Автор "
 
 #: ../tag.php:6
 msgid "Tag Archive: "
