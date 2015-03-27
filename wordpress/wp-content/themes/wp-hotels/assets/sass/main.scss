@@ -754,6 +754,8 @@ article {
             position: absolute;
             top: 0;
             left: 0;
+            overflow: hidden;
+            height: 70px;
          }
          .date {
             position: absolute;
@@ -852,9 +854,9 @@ article {
             display: inline-block;
             padding: 5px;
             height: 30px;
-            margin: 0 3px;
+            margin: 0 4px;
             border-radius: 2px;
-            width: 160px;
+            width: 170px;
          }
          input {
             text-align: left;
@@ -864,15 +866,18 @@ article {
          button {
             text-align: center;
             background-color: #5299c7;
-            border: 1px solid #5299c7;
+            border: 0;
+            height: 32px;
             font-size: 18px;
             color: #fff;
+            margin-right: 7px;
+            width: 145px;
          }
          &:before {
             @include sprite($sprite-ico-mailform);
             position: absolute;
-            top: 5px;
-            left: 15px;
+            top: 8px;
+            left: 11px;
             content: '';
             display: block;
          }
