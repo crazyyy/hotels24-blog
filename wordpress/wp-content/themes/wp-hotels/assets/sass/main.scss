@@ -1192,6 +1192,9 @@ article.hentry {
       margin: 0 0 40px;
       background-color: #fff;
    }
+   .after-content-title {
+      border-top: 0;
+   }
 }
 .nearby-hotels {
    ul {
@@ -1313,6 +1316,10 @@ article.hentry {
             background-color: darken(#5299c7, 10%);
          }
       }
+   }   
+   .after-content-title {
+      border-top: 0;
+      padding-top: 0;
    }
 }
 .poster-headline {
