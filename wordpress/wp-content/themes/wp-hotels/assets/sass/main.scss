@@ -620,6 +620,7 @@ article {
             border-bottom: 1px solid #f4b233;
             font-size: 14px;
             color: #414141;
+            text-transform: lowercase;
          }
          a{
             color: #3c89b5;
@@ -632,7 +633,7 @@ article {
             .cluster {
                position: absolute;
                right: -5px;
-               top: 0;
+               top: -2px;
                width: 45px;
                font-size: 24px;
                font-weight: bold;
@@ -931,6 +932,7 @@ article {
          margin: 0 0 0 260px !important;
          position: relative !important;
          top: 0 !important;
+         padding: 12px 12px 0 0 !important;
          a {
             color: #3c89b5;
          }
@@ -984,6 +986,7 @@ article {
          text-align: center;
          font-size: 10px;
          font-weight: normal;
+         text-transform: lowercase;
       }
    }
 }
@@ -1014,6 +1017,11 @@ article {
       text-decoration: none;
    }
 }
+.single-posters {
+   .poster-headline {
+      margin-top: -20px;
+   }
+}
 .single-title {
    color: #333;
    font-size: 40px;
@@ -1023,13 +1031,14 @@ article {
    color: #1f1f1f !important;
    font-style: italic !important;
    font-size: 21px !important;
+   line-height: 1.2 !important;
    margin: 0 0 22px;
 }
 .authors-line {
    display: block;
-   line-height: 2.5;
+   line-height: 3.5 !important;
    color: #696969;
-   font-size: 12px;
+   font-size: 12px !important;
    margin: 0 0 18px;
    img {
       border-radius: 50%;
@@ -1453,6 +1462,16 @@ article.hentry {
       }
    }
 }
+.sinle,
+.page {
+   .inner-title {
+      font-size: 30px;
+      line-height: 1.2;
+      color: #3c89b5;
+      margin: 0 0 30px;
+   }  
+}
+
 footer {
    position: relative;
    width: 100%;

@@ -78,7 +78,7 @@
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 				</h2>
 				<!-- /post title -->
-				<?php wpeExcerpt('wpeExcerpt30'); ?>				
+				<?php wpeExcerpt('wpeExcerpt20'); ?>				
 			</div>
 			<!-- /.includer-article -->
 			

@@ -28,7 +28,7 @@
 			<span class="date"><?php the_time('d F Y'); ?></span>
 			<!-- /post details -->
 			
-			<?php wpeExcerpt('wpeExcerpt30'); ?>
+			<?php wpeExcerpt('wpeExcerpt20'); ?>
 			
 		</article>
 		<!-- /article -->
