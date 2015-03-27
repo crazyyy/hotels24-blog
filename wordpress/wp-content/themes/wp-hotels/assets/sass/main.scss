@@ -331,7 +331,7 @@ header {
             text-align: center;
             &:hover {
                color: #fff;
-               background-color: #444;
+               background-color: #96a6a6;
             }
          }
       }
@@ -1470,8 +1470,7 @@ article.hentry {
       }
    }
 }
-.sinle,
-.page {
+.single-post {
    .inner-title {
       font-size: 30px;
       line-height: 1.2;
