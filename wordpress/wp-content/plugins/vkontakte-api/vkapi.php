@@ -3,7 +3,7 @@
 Plugin Name: VKontakte API
 Plugin URI: http://blog.darx.net/projects/vk_api
 Description: Add API functions from vk.com in your own blog. <br /><strong><a href="options-general.php?page=vkapi_settings">Settings!</a></strong>
-Version: 3.21
+Version: 3.22
 Author: kowack
 Author URI: http://blog.darx.net/
 */
@@ -1014,7 +1014,7 @@ class VK_api {
 
         $option = get_option( 'vkapi_show_share' );
         if ( $option == 'true' ) {
-            add_action( 'vkapi_body', array( &$this, 'js_async_vkshare' ) );
+            add_action( 'vkapi_body', array( &$this, 'js_async_vkshare' ), 1 );
         }
         $option = get_option( 'gpapi_show_like' );
         if ( $option == 'true' ) {
@@ -1606,24 +1606,17 @@ class VK_api {
                             VK.Observer.subscribe('widgets.comments.new_comment', onChangePlusVK);
                         if (typeof onChangeMinusVK !== 'undefined')
                             VK.Observer.subscribe('widgets.comments.delete_comment', onChangeMinusVK);
-                        jQuery(document).trigger('vkapi_vk');
-                    };
-
-                    setTimeout(function () {
-                        if (typeof VK === 'undefined') {
-                            var el = document.createElement("script");
-                            el.type = "text/javascript";
-                            el.src = "https://vk.com/js/api/openapi.js";
-                            el.async = true;
-                            document.getElementById("vk_api_transport").appendChild(el);
-                        } else {
-                            if (typeof onChangePlusVK !== 'undefined')
-                                VK.Observer.subscribe('widgets.comments.new_comment', onChangePlusVK);
-                            if (typeof onChangeMinusVK !== 'undefined')
-                                VK.Observer.subscribe('widgets.comments.delete_comment', onChangeMinusVK);
+                        if (!window.vkapi_vk) {
+                            window.vkapi_vk = true;
                             jQuery(document).trigger('vkapi_vk');
                         }
-                    }, 0);
+                    };
+
+                    var el = document.createElement("script");
+                    el.type = "text/javascript";
+                    el.src = "https://vk.com/js/api/openapi.js";
+                    el.async = true;
+                    document.getElementById("vk_api_transport").appendChild(el);
                 });
             </script>
         <?php endif;
@@ -1874,11 +1867,9 @@ class VK_api {
                 vertical-align: top !important;
             }
 
-            /*.fb-like span {*/
-            /*overflow:visible !important;*/
-            /*width:480px !important;*/
-            /*margin-right:-375px;*/
-            /*}*/
+            ul.nostyle iframe {
+                max-width: none !important;
+            }
         </style>
     <?php
     }
@@ -1902,10 +1893,10 @@ class VK_api {
         $vkapi_title = addslashes( do_shortcode( $post->post_title ) );
         $vkapi_url   = get_permalink();
         $vkapi_text  = str_replace( array( "\r\n", "\n", "\r" ), ' <br />', do_shortcode( $post->post_content ) );
+        $vkapi_image = $this->first_postimage( $vkapi_text );
         $vkapi_text  = strip_tags( $vkapi_text );
         $vkapi_text  = addslashes( $vkapi_text );
         $vkapi_descr = $vkapi_text = mb_substr( $vkapi_text, 0, 139 );
-        $vkapi_image = $this->first_postimage( $vkapi_text );
         // pageImage
         echo "
 						<script type=\"text/javascript\">
@@ -1945,10 +1936,10 @@ class VK_api {
         $vkapi_url   = get_permalink();
         $vkapi_title = addslashes( do_shortcode( $post->post_title ) );
         $vkapi_descr = str_replace( array( "\r\n", "\n", "\r" ), ' <br />', do_shortcode( $post->post_content ) );
+        $vkapi_image = $this->first_postimage( $vkapi_descr );
         $vkapi_descr = strip_tags( $vkapi_descr );
         $vkapi_descr = addslashes( $vkapi_descr );
         $vkapi_descr = mb_substr( $vkapi_descr, 0, 139 );
-        $vkapi_image = $this->first_postimage( $vkapi_descr );
         $vkapi_type  = get_option( 'vkapi_share_type' );
         $vkapi_text  = get_option( 'vkapi_share_text' );
         $vkapi_text  = addslashes( $vkapi_text );
