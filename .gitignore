@@ -19,3 +19,4 @@ node_modules
 /.hgignore
 /wordpress/sxd
 /wordpress/wp-config.php
+_gsdata_
