@@ -1,0 +1,309 @@
+VERSION BUILD=8920312 RECORDER=FX
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_6.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_7.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_8.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_9.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_10.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_11.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_12.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_13.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_14.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_15.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_16.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_17.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_18.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_19.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_20.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_21.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_22.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_23.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_24.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_25.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_26.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_27.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_28.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_29.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_29.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_30.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_31.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_32.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_33.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*	
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_34.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_35.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_36.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+
+
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_37.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_38.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
+TAB T=1
+URL GOTO=http://news.hotels24.ua/wp-admin/import.php
+TAG POS=1 TYPE=A ATTR=TXT:Импорт
+TAG POS=1 TYPE=A ATTR=TXT:WordPress
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:import-upload-form ATTR=ID:upload CONTENT=D:\Works\Verstka\hotels24-blog\content\hotels24-blog_39.xml
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:import-upload-form ATTR=ID:submit
+TAG POS=1 TYPE=LABEL FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=TXT:Скачать<SP>и<SP>импортировать<SP>файлы<SP>вложений
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=ID:import-attachments CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:http://news.hotels24.ua/wp-admin/admin.php?import=wordpress&step=2 ATTR=*
