@@ -7,7 +7,7 @@
 	<?php 
 
 	 $args = array(
-				   'cat' => '8',
+				   'cat' => '158',
 				   'post_type' => 'post',
 				   'posts_per_page' => 10,
 				   'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
