@@ -29,7 +29,7 @@
 	<?php wp_footer(); ?>
 	<script>
 		// open-close .more in nav
-		var morebutton = $( ".headnav li:last-child" );
+		var morebutton = $( ".headnav li.morebutton" );
 		morebutton.click(function() {
 
 		  $( ".nav-more-block" ).toggle( "fast", function() {
@@ -41,6 +41,11 @@
 		});
 		// open-close .more in nav
 
+		var count = document.getElementsByTagName('article').length;
+		var mailform = document.getElementsByID('mailing-form');
+		if (count < 10 ) {
+			mailform.className = mailform.className + " mailing-form-hide";
+		};
 	</script>
 </body>
 </html>

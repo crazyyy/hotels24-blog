@@ -200,7 +200,7 @@ if (function_exists('register_sidebar')) {
 
 //  RU: Произвольное обрезание текста
 function wpeExcerpt20($length) {
-    return 20;
+    return 18;
 }
 function wpeExcerpt30($length) {
     return 30;
