@@ -114,7 +114,6 @@ gulp.task('image', function() {
             })
         ))
         .pipe(gulp.dest(paths.images.dest))
-        .pipe(livereload())
         .pipe(plugins.size({showFiles:true}));
 });
 

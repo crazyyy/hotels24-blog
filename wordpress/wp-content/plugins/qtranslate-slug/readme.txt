@@ -3,8 +3,8 @@ Contributors: carlos_a_sanz, pedroghandi
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SYC46KSLRC4Q8
 Tags: qtranslate, slug, multilanguage, widget
 Requires at least: 3.3
-Tested up to: 4.1
-Stable tag: 1.1.13
+Tested up to: 4.1.1
+Stable tag: 1.1.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,28 +21,30 @@ Adds support for permalink translations and fix some QTranslate deficiencies sin
 * Wordpress 3.3 (PHP 5.4 and MySQL 5)
 * mQtranslate 2.6.2.4 or Qtranslate 2.5.8 or qtranslate-x ( 2.9.1 )
 
+= New in 1.1.16 =
+Minor fix for the language menu using qtranslate's function
+
+= New in 1.1.15 =
+* Fixes the duplicated hreflang links in <head>
+
+= New in 1.1.14 =
+
+The menu widget didn't allow the visitors to change to the default language if qtranslate-x was being used. So, adjusted the Language Menu widget to play nice with qtranslate-x. 
+Hope to bring some nice changes that were made in the github repository in the next version. For now, enjoy.
 
 = New in 1.1.13 =
-
-Thanks to returning @pedro-mendonca for these commits:
-
+== Thanks to returning @pedro-mendonca for these commits: ==
 * Cleaned duplicated label in widget
 * Bug fix in "Slug (%s)" string translation
 * Changed text strings with no text-domain and with text-domain 'qtranlate' to text-domain 'qts'
 * pot catalog updated with current strings, including last found is "More information about".
-
-Thanks to @johnclause for these :
-
+== Thanks to @johnclause for these : ==
 * Convenience links in notice_dependences
 * Menu compatibility with qTranslate-X
 * Fixed extra characters in widget
-
-Thanks to vbkun for casting the much wanted function to get a slug based on an id and language
-
+### Thanks to vbkun for casting the much wanted function to get a slug based on an id and language
 * Added a global qts_get_slug( $id, $lang)
-
-and sadly:
-
+### and sadly:
 * removed the menu admin box until better implementation
 
 
@@ -70,8 +72,7 @@ Thanks for use this plugin!
 
 
 == Installation ==
-**This plugins requires [Qtranslate](http://wordpress.org/extend/plugins/qtranslate/) or [mqTranslate](https://wordpress.org/plugins/mqtranslate/) 
-ir [qtranslate-X](https://wordpress.org/plugins/qtranslate-x/) installed previously, if not, it will not activate.**
+**This plugins requires [Qtranslate](http://wordpress.org/extend/plugins/qtranslate/) or [mqTranslate](https://wordpress.org/plugins/mqtranslate/) installed previously, if not, it will not activate.**
 
 1. Upload `qtranslate-slug` to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the 'Plugins' menu in WordPress.

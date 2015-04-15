@@ -1,4 +1,17 @@
 
+
+= New in 1.1.16 =
+Minor fix for the language menu using qtranslate's function
+
+= New in 1.1.15 =
+* Fixes the duplicated hreflang links in <head>
+
+= New in 1.1.14 =
+
+The menu widget didn't allow the visitors to change to the default language if qtranslate-x was being used. So, adjusted the Language Menu widget to play nice with qtranslate-x. 
+Hope to bring some nice changes that were made in the github repository in the next version. For now, enjoy.
+
+
 = 1.1.13 =
 == Thanks to returning @pedro-mendonca for these commits: ==
 * Cleaned duplicated label in widget
